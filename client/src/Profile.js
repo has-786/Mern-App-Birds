@@ -24,7 +24,7 @@ componentDidMount()
 render()
 {
 return (<div>
-  <center> <h2 style={{backgroundColor:"purple",color:"white",padding:"20px",marginTop:"0%"}}>My Profile<br></br><button class='btn btn-success' >Beloved Place </button></h2>
+  <center> <h2 style={{backgroundColor:"purple",color:"white",padding:"20px",marginTop:"0%"}}>My Profile<br></br><button class='btn btn-success' >The Beloved Place </button></h2>
 
  <div ><img id="MainImage1" src="https://i.pinimg.com/originals/96/3e/5c/963e5cc71c8930e114e6befb3aa55322.jpg"  height="400px" />
 	  </div></center>

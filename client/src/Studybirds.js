@@ -39,8 +39,8 @@ render()
  <div>
  <center><h2 style={{"width":"100%"}}>STUDY THE BIRDS</h2></center>  	
  <div><form onSubmit={this.fun.bind(this)}>
-<button class='btn btn-sm btn-primary'>Search Birds</button>&nbsp;&nbsp;&nbsp;&nbsp;	<input type='text'  name='name'  id='1' required/>
-				<input type='submit'  value='Search' />
+	<center><input type='text'  name='name'  id='1' required/>
+				<input type='submit'  value='Search' /></center>
            </form>	<br></br><br></br><br></br>	</div>
 <br></br><br></br>
 	<div id='show1'>

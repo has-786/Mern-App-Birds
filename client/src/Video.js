@@ -26,7 +26,7 @@ render()
  return (
  <div style={{width:"100%"}}>
  <center><h2 style={{width:"100%"}}>GALLERY&nbsp;&nbsp; VIDEOS</h2></center>   
-			</center><input type='text'  name='name'  id='1' required/>
+			<center><input type='text'  name='name'  id='1' required/>
 			<button onClick={this.fun1.bind(this)}>Search</button></center>
 <br></br><br></br><br></br><br></br>
 	<div id='show1'>		

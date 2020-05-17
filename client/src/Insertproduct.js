@@ -21,7 +21,7 @@ render()
   <center><h2 >UPLOAD BIRDS TO SELL</h2></center>
 
 	<center>	<span><br></br><br></br></span>
-    <form action='http://localhost:5000/insertProduct' method="post" enctype='multipart/form-data'>
+    <form action='/insertProduct' method="post" enctype='multipart/form-data'>
 	<div><button class='btn btn-primary' >Name</button><input type='text' id='name' name='name'  required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-primary' >Species</button><input type='text' id='species' name='species'  required/></div>
@@ -47,7 +47,7 @@ fun2=()=>{
 	
  var data={name:document.getElementById('name').value,species:document.getElementById('species').value,quantity:document.getElementById('quantity').value,price:document.getElementById('price').value,
  disease:document.getElementById('disease').value};
-	fetch('http://localhost:5000/insertProduct',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
+	fetch('/insertProduct',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   }

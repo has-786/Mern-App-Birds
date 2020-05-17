@@ -21,7 +21,7 @@ render()
  <div>
   <center><h2 >UPLOAD GALLERY IMAGE</h2></center>
 	<center>	<span><br></br><br></br></span>
-    <form method="post" action="http://localhost:5000/insertImage"  enctype="multipart/form-data" >
+    <form method="post" action="/insertImage"  enctype="multipart/form-data" >
 	<div><button class='btn btn-primary' >Name</button><input type='text' id='name' name='name'   required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-primary' >Tags</button><input type='text' id='tags' name='tags'   required/></div>

@@ -26,13 +26,13 @@ render()
 return (<div>
   <center> <h2 style={{backgroundColor:"purple",color:"white",padding:"20px",marginTop:"0%"}}>My Profile<br></br><button class='btn btn-success' >Beloved Place </button></h2>
 
- <div ><img src="https://i.pinimg.com/originals/96/3e/5c/963e5cc71c8930e114e6befb3aa55322.jpg" width="1000px" height="400px" />
+ <div ><img id="MainImage1" src="https://i.pinimg.com/originals/96/3e/5c/963e5cc71c8930e114e6befb3aa55322.jpg"  height="400px" />
 	  </div></center>
 <span id='link' style={{float:"right",marginTop:"-30%"}}><button id='login' class='btn btn-primary' onClick={this.signout.bind(this)}>Logout</button></span>	
 
 <div id='profile'>
  <i class='fa fa-home' style={{float:"left",marginTop:"-15%",marginLeft:"5px",color:"green",fontSize:"60px"}}> </i> <a class='btn btn-info' 
- style={{marginTop:"-20%",marginLeft:"0%" }}href="/" >Home</a>
+ id='home1' href="/" >Home</a>
  
  <button class='btn btn-success' style={{float:"left",marginTop:"-25%",marginLeft:"0px"}}>{this.state.username}</button>   
  </div>

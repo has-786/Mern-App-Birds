@@ -26,7 +26,6 @@ render()
  return (
  <div style={{width:"100%"}}>
  <center><h2 style={{width:"100%"}}>GALLERY&nbsp;&nbsp; IMAGES</h2></center>   
-			<button class='btn btn-sm btn-primary'>Search Images</button>&nbsp;&nbsp;&nbsp;&nbsp;	
 			<input type='text'  name='name'  id='1' required/>
 			<button onClick={this.fun1.bind(this)}>Search</button>
 <br></br><br></br><br></br><br></br>

@@ -42,8 +42,8 @@ render()
  <div style={{width:"100%"}}>
  <center><h2 >MY BLOGS</h2></center>
  	<div><form onSubmit={this.fun.bind(this)}>
-<input type='text'  name='name'  id='1' required/>
-				<input type='submit'  value='Search' />
+<center><input type='text'  name='name'  id='1' required/>
+				<input type='submit'  value='Search' /></div>
            </form>	<br></br><br></br><br></br>	</div>
 <br></br><br></br>
 

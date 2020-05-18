@@ -8,7 +8,7 @@ module.exports=function(app,upload){
 				var NewImage=new image({name:req.body.name,tags:req.body.tags,img:req.file.path,likes:0});
 						NewImage.save((err,image1)=>{
 							if(err)console.log(err);  
-							else {   console.log(image1);	//res.send("Image Uploaded Successfully to your Gallery");  
+							else {   console.log(image1);	res.send({msg:"Image Uploaded Successfully to your Gallery"});  
 															
 							} 
 					});		

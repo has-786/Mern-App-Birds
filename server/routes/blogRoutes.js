@@ -13,7 +13,7 @@ app.post('/insertblog',upload.single('image'),(req,res,next)=>{
 	var Newblog=new blog({img:img,topic:topic,data:data,timestamp:timestamp});
 					Newblog.save((err,blog1)=>{
 						if(err)console.log(err);  
-						else {   console.log(blog1);	res.send("<center>Blog Uploaded Successfully</center>");   } 
+						else {   console.log(blog1);	res.send({msg:"Blog Uploaded Successfully"});   } 
 					});		
 				
 });

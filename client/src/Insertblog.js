@@ -11,10 +11,7 @@ class Insertblog extends Component{
 	}
 	
 	componentDidMount(){this.state.username=localStorage.getItem('user'); 
-		var tempDate = new Date();
-  var date = tempDate.getFullYear() + '-' + (tempDate.getMonth()+1) + '-' + tempDate.getDate() +' '+ tempDate.getHours()+':'+ tempDate.getMinutes()+':'+ tempDate.getSeconds();
-  const currDate = date;
-  document.getElementById('timestamp').value=currDate;
+ 
 	
 	}
 
@@ -25,35 +22,38 @@ render()
   <center><h2 >UPLOAD YOUR BLOG</h2></center>
 
 	<center>	<span><br></br><br></br></span>
-    <form action="/insertblog" method="post" enctype="multipart/form-data" >
 	<div><button class='btn btn-primary' >Image </button><input type='file' id='img' name='image'   required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-danger' >Mention Topic</button><input type='text' id='topic' name='topic'   required/></div>
 		<span><br></br><br></br></span>
 		<div><button class='btn btn-danger' >Write Here</button><input type='text' id='data' name='data'   required/></div>
 		<span><br></br><br></br></span>
-		<div style={{display:'none'}}><input type='text' id='timestamp' name='timestamp'   required/></div>
-		<span><br></br><br></br></span>
 	<div>
-		<button class='btn btn-danger' >Upload</button>
+		<button class='btn btn-danger' onClick={this.fun2.bind(this)}>Upload</button>
 	</div>
 	<span><br></br><br></br></span>
-	</form>
 	</center>
 </div>);
 }
 
 
 
-fun2=()=>{
-		if(!this.state.username){alert('Please Login First');return false;}
-
+fun2=(event)=>{
+	//	if(!this.state.username){alert('Please Login First');return false;}
+		event.preventDefault();
 	var tempDate = new Date();
   var date = tempDate.getFullYear() + '-' + (tempDate.getMonth()+1) + '-' + tempDate.getDate() +' '+ tempDate.getHours()+':'+ tempDate.getMinutes()+':'+ tempDate.getSeconds();
   const currDate = date;
- var data={img:document.getElementById('img').value,topic:document.getElementById('topic').value,data:document.getElementById('data').value,
- timestamp:currDate};
-	fetch('/insertblog',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
+  
+  var f=new FormData();
+		f.append('data',document.getElementById('data').value);
+		f.append('topic',document.getElementById('topic').value);
+		f.append('timestamp',currDate);
+
+		var myfile=document.getElementById('img').files[0];
+		f.append('image',myfile); 
+		
+	fetch('/insertblog',{ method:'POST',body:f }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   }

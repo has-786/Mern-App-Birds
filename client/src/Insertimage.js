@@ -14,6 +14,8 @@ class Insertimage extends Component{
 	}
 	
 	componentDidMount(){this.state.username=localStorage.getItem('user'); }
+//method="post" action="/insertImage"  enctype="multipart/form-data"
+//		<input type='submit' class='btn btn-danger' value="Upload" />
 
 render()
 {
@@ -21,19 +23,18 @@ render()
  <div>
   <center><h2 >UPLOAD GALLERY IMAGE</h2></center>
 	<center>	<span><br></br><br></br></span>
-    <form method="post" action="/insertImage"  enctype="multipart/form-data" >
 	<div><button class='btn btn-primary' >Name</button><input type='text' id='name' name='name'   required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-primary' >Tags</button><input type='text' id='tags' name='tags'   required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-danger' >Image</button><input type='file' id='img' name='image'    required/></div>
+		<div><button class='btn btn-danger' onClick={this.fun2.bind(this)}>Upload</button></div>
+
 		<span><br></br><br></br></span>
 
 	<div>
-		<input type='submit' class='btn btn-danger' value="Upload" />
 	</div>
 	<span><br></br><br></br></span>
-	</form>
 	</center>
 </div>);
 }
@@ -45,12 +46,13 @@ fun2=(event)=>{
 		//if(!this.state.username){alert('Please Login First');return false;}
 		var f=new FormData();
 		f.append('name',document.getElementById('name').value);
-				 		alert(JSON.stringify(f));
+		f.append('tags',document.getElementById('tags').value);
 
 		var myfile=document.getElementById('img').files[0];
-f.append('image',myfile,"myfile.jpg");   
+f.append('image',myfile);   
+				 		//alert(f.getAll());
 
-	fetch('http://localhost:5000/insertImage',{ method:'POST',body:f }).then(response=>{
+	fetch('/insertImage',{ method:'POST',body:f }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   }

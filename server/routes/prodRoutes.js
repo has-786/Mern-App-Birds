@@ -12,7 +12,7 @@ app.post('/insertProduct',upload.single('image'), (req,res,next)=>{
 	var Newprod=new prod({name:name,species:species,quantity:quantity,price:price,img:img});
 					Newprod.save((err,prod1)=>{
 						if(err)console.log(err);  
-						else {   console.log(prod1);	res.send("<center><div>Product Uploaded Successfully</div></center>");   } 
+						else {   console.log(prod1);	res.send({msg:"Product Uploaded Successfully"});   } 
 					});		
 				
 });

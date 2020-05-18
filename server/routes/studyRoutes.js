@@ -9,7 +9,7 @@ app.post("/insertBird",upload.single('image'), (req, res, next) => {
 				var NewBird=new bird({name:req.body.name,species:req.body.species,img:req.file.path,details:req.body.details});
 						NewBird.save((err,bird1)=>{
 							if(err)console.log(err);  
-							else {   console.log(bird1);	res.send("Bird Details Uploaded Successfully to Study Section");   } 
+							else {   console.log(bird1);	res.send({msg:"Bird Details Uploaded Successfully to Study Section"});   } 
 					});		
 		});
 

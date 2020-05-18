@@ -22,7 +22,6 @@ render()
   <center><h2 >UPLOAD BIRDS DETAILS</h2></center>
 
 	<center>	<span><br></br><br></br></span>
-    <form action="/insertBird" method="post" enctype="multipart/form-data">
 	<div><button class='btn btn-primary' >Name</button><input type='text' id='name' name='name'   required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-danger' >Species</button><input type='text' id='species' name='species'   required/></div>
@@ -32,22 +31,28 @@ render()
 		<div><button class='btn btn-danger' >Details</button><input type='text' id='details' name='details' style={{height:"300px",width:"300px"}}  required/></div>
 		<span><br></br><br></br></span>
 	<div>
-		<input type="submit" class='btn btn-danger' value="Upload" />
+		<div><button onClick={this.fun2.bind(this)} >Upload</button></div>
 	</div>
 	<span><br></br><br></br></span>
-	</form>
 	</center>
 </div>);
 }
 
 
 
-fun2=()=>{
+fun2=(event)=>{
 		//if(!this.state.username){alert('Please Login First');return false;}
+		event.preventDefault();
+			var f=new FormData();
+		f.append('name',document.getElementById('name').value);
+		f.append('species',document.getElementById('species').value);
+		f.append('details',document.getElementById('details').value);
+
+
+		var myfile=document.getElementById('image').files[0];
+		f.append('image',myfile); 
 		
- var data={name:document.getElementById('name').value,species:document.getElementById('species').value,email:document.getElementById('email').value,
- phone:document.getElementById('phone').value};
-	fetch('/inserthospital',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
+	fetch('/insertBird',{ method:'POST',body:f }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   }

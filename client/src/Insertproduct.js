@@ -21,7 +21,6 @@ render()
   <center><h2 >UPLOAD BIRDS TO SELL</h2></center>
 
 	<center>	<span><br></br><br></br></span>
-    <form action='/insertProduct' method="post" enctype='multipart/form-data'>
 	<div><button class='btn btn-primary' >Name</button><input type='text' id='name' name='name'  required/></div>
 	<span><br></br><br></br></span>
 	<div><button class='btn btn-primary' >Species</button><input type='text' id='species' name='species'  required/></div>
@@ -36,18 +35,24 @@ render()
 		<button class='btn btn-danger'  onClick={this.fun2.bind(this)}>Upload</button>
 	</div>
 	<span><br></br><br></br></span>
-	</form>
 	</center>
 </div>);
 }
 
 
 
-fun2=()=>{
-	
- var data={name:document.getElementById('name').value,species:document.getElementById('species').value,quantity:document.getElementById('quantity').value,price:document.getElementById('price').value,
- disease:document.getElementById('disease').value};
-	fetch('/insertProduct',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
+fun2=(event)=>{
+	event.preventDefault();
+	var f=new FormData();
+		f.append('name',document.getElementById('name').value);
+		f.append('species',document.getElementById('species').value);
+		f.append('quantity',document.getElementById('quantity').value);
+		f.append('price',document.getElementById('price').value);
+
+
+		var myfile=document.getElementById('image').files[0];
+		f.append('image',myfile); 
+	fetch('/insertProduct',{ method:'POST',body:f }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   }

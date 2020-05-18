@@ -41,33 +41,29 @@ render()
  return (
  <div>
  
- <div id = "login-box">
- <div class='left-box' style={{display:'block'}}><br></br><br></br>
+ 			<center><h2 style={{padding:"10px"}}>Sign In</h2></center>
+			     <br></br><br></br><br></br><br></br>
+
+			<center>
+		
+    <div id='contain'  style={{width:"300px",backgroundColor:"pink",border:"10px solid green",borderRadius:"30px",padding:"20px"}}>
+	<br></br><br></br>
+				<div><input type = "text" name = "name" id='1' placeholder="Username" required/></div><br></br><br></br>
+				<div><input type = "password" name = "pass" id='2'  placeholder="password" required/></div><br></br>
+				<div><button name = "signup-button" onClick={this.fun.bind(this)} class='btn btn-primary' value = "sign in">Sign In</button></div><br></br><br></br><br></br>
+				
+				<div><a href='/Forgotpassword' ><button class='btn btn-danger btn-sm'>forgot password?</button></a></div><br></br>
+
+				<div><a href='/Signup'><button class='btn btn-warning'>Don't have an account?</button></a></div><br></br><br></br><br></br>
 				<div><a href='/'><button class='btn btn-success'>Back to Home</button></a></div><br></br>
- 
- </div>
-		<div class = "right-box">
-			<center><h5><span class = "signin">Sign In </span></h5></center>
-				
-	
-			<input type = "text" name = "name" id='1' placeholder="Username" required/><br></br><br></br>
-			<input type = "password" name = "pass" id='2'  placeholder="password" required/>		
-
-		<br></br><br></br>
-			<button name = "signup-button" onClick={this.fun.bind(this)} class='btn btn-primary' value = "sign in">Sign In</button><br></br><br></br>
-	<a href='/Forgotpassword' ><button class='btn btn-danger btn-sm'>forgot password?</button></a>
-<br></br><br></br>
-
-				<a href='/Signup'><button class='btn btn-warning'>Don't have an account</button></a><br></br>
-
-<br></br><br></br>
-
-				 				 
-				 
-				
-		</div>
+	  
 	</div>
- </div>
+</center>
+				 				 
+		
+
+		</div> 
+		
  
 )}
 

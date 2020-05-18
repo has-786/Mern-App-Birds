@@ -16,29 +16,27 @@ render()
 {
  return (
  <div style={{width:"100%"}}>
- <div id = "login-box" >
-		<div class = "right-box">
+<center><h2 style={{padding:"10px"}}>Sign Up</h2></center>
 
-			<center><h5><span class = "signin">Sign Up </span></h5></center>
-				
-			<input type = "text" name = "name" id='1' placeholder="Username" required/><br></br><br></br>
-			<input type = "text" name = "email" id='2' pattern="[a-zA-Z0-9]+@gmail.com" placeholder="Email" required/><br></br><br></br>
-			<input type = "text" name = "phone" id='3' pattern="[0-9]{10}" placeholder="Phone No." required/><br></br><br></br>
-			<input type = "password" name = "pass" id='4'  placeholder="password" required/><br></br><br></br>
-			<input type = "password" name = "password" id='5'  placeholder="Retypepassword" required/><br></br><br></br>
+      <br></br><br></br><br></br><br></br>
+
+			<center>
+    <div id='contain'  style={{width:"300px",backgroundColor:"pink",border:"10px solid green",borderRadius:"30px",padding:"20px"}}>
+	<br></br><br></br>
+		
+			<div><input type = "text" name = "name" id='1' placeholder="Username" required/></div><br></br><br></br>
+			<div><input type = "text" name = "email" id='2' pattern="[a-zA-Z0-9]+@gmail.com" placeholder="Email" required/></div><br></br><br></br>
+			<div><input type = "text" name = "phone" id='3' pattern="[0-9]{10}" placeholder="Phone No." required/></div><br></br><br></br>
+			<div><input type = "password" name = "pass" id='4'  placeholder="password" required/></div><br></br><br></br>
+			<div><input type = "password" name = "password" id='5'  placeholder="Retypepassword" required/></div><br></br>
 			
-			<button  name = "signup-button"  class='btn btn-primary' value = "sign up" onClick={this.fun.bind(this)}>Sign Up</button><br></br><br></br>		
-		</div>
-		<div class = "left-box" style={{display:'block',marginTop:"-100px"}}>
-			<br></br><br></br><br></br>	<br></br><br></br>	<br></br>	
-			<div style={{display:'block'}}><a href='/Signin'><button class='btn btn-warning'>Already have an account</button></a></div><br></br>
-<br></br><br></br><br></br>			
-			<div class={{display:'block'}}><a href='/'><button class='btn btn-success'>Back to Home</button></a></div>	
-		</div>
-	
+			<div><button  name = "signup-button"  class='btn btn-primary' value = "sign up" onClick={this.fun.bind(this)}>Sign Up</button></div><br></br><br></br><br></br>		
 			
-			
+			<div ><a href='/Signin'><button class='btn btn-warning'>Already have an account?</button></a></div><br></br><br></br>		
+			<div ><a href='/'><button class='btn btn-success'>Back to Home</button></a></div><br></br>				
 	</div>
+	</center>
+	<br></br>	<br></br>	<br></br>	
 
  </div>
  

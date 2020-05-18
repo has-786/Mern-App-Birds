@@ -36,7 +36,7 @@ render()
 {
 	
  return (
- <div>
+ <div style={{width:"100%"}}>
  <center><h2 >STUDY THE BIRDS</h2></center>  	
  <div><form onSubmit={this.fun.bind(this)}>
 	<center><input type='text'  name='name'  id='1' required/>

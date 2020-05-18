@@ -37,7 +37,7 @@ render()
 {
 	
  return (
- <div>
+ <div style={{width:"100%"}}>
  <center><h2 style={{"width":"100%"}}>BUY BIRDS</h2></center>  
 <div class='row'>
 <div class='col-lg-8'>

@@ -31,7 +31,7 @@ componentDidMount()
 render()
 {
  return (
- <div>
+ <div style={{width:"100%"}}>
  <center><h2 >MY CART</h2></center>
 <a href='/Payment'><button  id='showcart' class='btn btn-success' >Checkout</button></a>
 

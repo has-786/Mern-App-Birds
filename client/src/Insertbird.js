@@ -53,7 +53,7 @@ fun2=(event)=>{
 		f.append('image',myfile); 				alert("Please Wait!! It may take some time");
 			
 	
-	fetch('http://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
+	fetch('https://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
 
 	return response.json()}).then((body)=>{ alert(JSON.stringify(body[0])) 
 	

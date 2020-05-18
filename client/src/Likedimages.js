@@ -32,26 +32,26 @@ render()
 		{this.state.arr.map( res=>( <div class="col-lg-12"  >		<br></br><br></br>
 <center>
 					 <div class="row">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{padding:"20px",backgroundColor:"pink",borderRadius:'10px',border:"5px solid green"}} >
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{backgroundColor:"pink",borderRadius:'10px',border:"5px solid green"}} >
 		  		<br></br>
-			<div class="features-icons-icon d-flex" >
+			<div class="features-icons-icon d-flex" style={{width:"60%"}}>
 				<div class="col-lg-2">	<button class='btn btn-info'>ID</button></div>
 				<div class="col-lg-10"><center><span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id}</span></center></div>
 			</div><br></br>
-            <div class="features-icons-icon d-flex" >
+            <div class="features-icons-icon d-flex" style={{width:"60%"}}>
 <div class="col-lg-2">	<button class='btn btn-info'>Name</button></div><div class="col-lg-10"><center><button class='btn btn-primary'>{res.name}</button></center></div>
 			</div><br></br>
-			<div class="features-icons-icon d-flex">
+			<div class="features-icons-icon d-flex" style={{width:"60%"}}>
 						
 		<div class="col-lg-2"><button class='btn btn-info'>Tags</button></div><div class="col-lg-10"><center><button class='btn btn-success'> {res.tags} </button></center></div>
             </div><br></br>
 			<div class="features-icons-icon d-flex">
 				  <div class="col-lg-12"><img src width="100%"  height="300px" src={res.img} /></div>
 			</div><br></br>
-		<div class="features-icons-icon d-flex">		
+		<div class="features-icons-icon d-flex" style={{width:"60%"}}>		
 	     	<div class="col-lg-4"><button class='btn btn-primary'>Likes</button></div><div class="col-lg-8"><button class='btn btn-warning' > {res.likes} </button></div>
             </div><br></br>
-			<div class="features-icons-icon d-flex">
+			<div class="features-icons-icon d-flex" style={{width:"60%"}}>
 		 <div class="col-lg-12"><center><button  class='btn btn-secondary' id={res._id} onClick={this.fun.bind(this,res._id,this.state.username)} style={{marginRight:"15px"}}>Unlike</button></center></div>
 			</div><br></br>
 			

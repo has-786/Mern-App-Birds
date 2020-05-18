@@ -52,7 +52,7 @@ render()
 	   <div class="col-lg-12" >		<br></br><br></br>
 <center>
 					 <div class="row" >
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{padding:"15px",border:"5px solid red",borderRadius:"10px",backgroundColor:"lightgreen"}} >
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"lightgreen"}} >
 		  		<br></br>
 
 				    <div class="features-icons-icon d-flex" style={{width:"60%"}}>

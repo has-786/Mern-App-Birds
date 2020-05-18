@@ -40,10 +40,10 @@ render()
 {
  return (
  <div style={{width:"100%"}}>
- <center><h2 >MY BLOGS</h2></center>
+ <center><h2 style={{width:"100%"}}>MY BLOGS</h2></center>
  	<div><form onSubmit={this.fun.bind(this)}>
 <center><input type='text'  name='name'  id='1' required/>
-				<input type='submit'  value='Search' /></center>div>
+				<input type='submit'  value='Search' /></center>
            </form>	<br></br><br></br><br></br>	</div>
 <br></br><br></br>
 
@@ -61,7 +61,7 @@ render()
 		  		<br></br>
 
             <div class="features-icons-icon d-flex" style={{width:"60%"}} >
-					<div class="col-lg-3"><button class='btn btn-secondary'>Blog ID</button></div>
+					<div class="col-lg-3"><button class='btn btn-secondary'> ID</button></div>
 					<div class="col-lg-9"><span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id}</span></div>
 			</div><br></br>
 						

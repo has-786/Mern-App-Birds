@@ -53,7 +53,7 @@ render()
       <div class="row" >
 
 		{this.state.arr.reverse().map( res=>( 
-	   <div class="col-lg-12"  >
+	   <div class="col-lg-12" style={{width:"60%"}} >
 	  <br></br><br></br>
 <center>
 					 <div class="row" >

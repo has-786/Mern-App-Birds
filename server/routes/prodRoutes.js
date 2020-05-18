@@ -1,7 +1,7 @@
 module.exports=function(app,upload){
 
 	
-app.post('/insertProduct',upload.single('image'), (req,res,next)=>{
+app.post('/insertProduct', (req,res,next)=>{
 	var name=req.body.name;	
 	var species=req.body.species;  
 

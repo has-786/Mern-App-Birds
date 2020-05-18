@@ -1,7 +1,7 @@
 
 module.exports=function(app,upload){
 
-app.post("/insertBird",upload.single('image'), (req, res, next) => {
+app.post("/insertBird", (req, res, next) => {
 				
 	
 				var NewBird=new bird({name:req.body.name,species:req.body.species,img:req.body.img,details:req.body.details});

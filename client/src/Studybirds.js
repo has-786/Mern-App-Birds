@@ -23,7 +23,7 @@ componentDidMount()
 	if(this.state.username)alert("Hi "+this.state.username);
     
 	var data={name:this.state.username}; //this.setState({ position: 1 });
-	fetch('http://localhost:5000/showAllBirds',{ method: 'POST',body:JSON.stringify(data),
+	fetch('/showAllBirds',{ method: 'POST',body:JSON.stringify(data),
 		headers: {"Content-Type": "application/json" } }).then(response=>{
 	return response.json()}).then(
  (body)=>{this.setState({arr:body});  

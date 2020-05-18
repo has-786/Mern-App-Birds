@@ -1,6 +1,6 @@
 
 module.exports=function(app,upload){
-		app.post("/insertImage",upload.single('image'), (req, res, next) => {
+		app.post("/insertImage", (req, res, next) => {
 				
 	
 				var NewImage=new image({name:req.body.name,tags:req.body.tags,img:req.body.img,likes:0});

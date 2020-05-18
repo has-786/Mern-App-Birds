@@ -4,7 +4,7 @@
 module.exports=function(app,upload){
 
 
-app.post('/insertblog',upload.single('image'),(req,res,next)=>{
+app.post('/insertblog',(req,res,next)=>{
 	var data=req.body.data;
 	var topic=req.body.topic;  
 	var img=req.body.img;

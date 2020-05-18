@@ -1,11 +1,9 @@
 
 module.exports=function(app,upload){
 		app.post("/insertImage",upload.single('image'), (req, res, next) => {
-				var files=req.file; 		
-					console.log(files);
-					console.log(req.body);
+				
 	
-				var NewImage=new image({name:req.body.name,tags:req.body.tags,img:req.file.path,likes:0});
+				var NewImage=new image({name:req.body.name,tags:req.body.tags,img:req.body.img,likes:0});
 						NewImage.save((err,image1)=>{
 							if(err)console.log(err);  
 							else {   console.log(image1);	res.send({msg:"Image Uploaded Successfully to your Gallery"});  

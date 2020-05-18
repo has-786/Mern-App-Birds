@@ -52,10 +52,23 @@ fun2=(event)=>{
 
 		var myfile=document.getElementById('img').files[0];
 		f.append('image',myfile); 
-		
-	fetch('/insertblog',{ method:'POST',body:f }).then(response=>{
-	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
-     
+	alert("Please Wait!! It may take some time");
+			
+
+
+
+	fetch('https://alibahadur.000webhostapp.com/insertBlog.php',{ method:'POST',body:f }).then(response=>{
+
+	return response.json()}).then((body)=>{ alert(JSON.stringify(body[0]));
+	
+	var data={data:document.getElementById('data').value,topic:document.getElementById('topic').value,
+	img:'https://alibahadur.000webhostapp.com/uploads/'+myfile.name,timestamp:currDate};
+	
+	fetch('/insertblog',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" }  }).then(response=>{
+	return response.json()}).then((body)=>{console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
+
+	
+	}  ).catch(err=>alert(JSON.stringify(err)));
   }
 
 }

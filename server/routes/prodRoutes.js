@@ -7,9 +7,8 @@ app.post('/insertProduct',upload.single('image'), (req,res,next)=>{
 
 	var quantity=req.body.quantity;  
 	var price=req.body.price;
-	var img=req.file.path;
 	
-	var Newprod=new prod({name:name,species:species,quantity:quantity,price:price,img:img});
+	var Newprod=new prod({name:name,species:species,quantity:quantity,price:price,img:req.body.img});
 					Newprod.save((err,prod1)=>{
 						if(err)console.log(err);  
 						else {   console.log(prod1);	res.send({msg:"Product Uploaded Successfully"});   } 

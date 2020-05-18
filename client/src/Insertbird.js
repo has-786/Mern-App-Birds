@@ -50,10 +50,21 @@ fun2=(event)=>{
 
 
 		var myfile=document.getElementById('image').files[0];
-		f.append('image',myfile); 
-		
-	fetch('/insertBird',{ method:'POST',body:f }).then(response=>{
-	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
+		f.append('image',myfile); 				alert("Please Wait!! It may take some time");
+			
+	
+	fetch('https://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
+
+	return response.json()}).then((body)=>{ alert(JSON.stringify(body[0])) 
+	
+	var data={name:document.getElementById('name').value,species:document.getElementById('species').value,
+	details:document.getElementById('details').value,img:'https://alibahadur.000webhostapp.com/uploads/'+myfile.name};
+	
+	fetch('/insertBird',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" }  }).then(response=>{
+	return response.json()}).then((body)=>{console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
+
+	
+	}  ).catch(err=>alert(JSON.stringify(err)));	
      
   }
 

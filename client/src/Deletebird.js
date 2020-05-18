@@ -36,7 +36,7 @@ render()
 fun2=()=>{
 		
  var data={id:document.getElementById('id').value};
-	fetch('http://localhost:5000/deleteBird',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
+	fetch('/deleteBird',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then(response=>{
 	return response.json()}).then((body)=>{ if(body.msg)alert(body.msg);  }  ).catch(err=>console.log(JSON.stringify(err)));		
      
   

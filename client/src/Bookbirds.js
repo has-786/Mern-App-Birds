@@ -56,32 +56,32 @@ render()
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{padding:"20px",border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
 		  		<br></br>
 
-				    <div class="features-icons-icon d-flex" >
+				    <div class="features-icons-icon d-flex" style={{width:"60%"}}>
 <div class="col-lg-3">	<center><button class='btn btn-secondary'>ID</button></center></div><div class="col-lg-9" style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}><center>{res._id}</center></div>
 			</div><br></br><br></br>
 				
-				<div class="features-icons-icon d-flex">
-				  <div class="col-lg-12"><center><img src={res.img} width="100%" height="200px"/> </center></div>
+				<div class="features-icons-icon d-flex" >
+				  <div class="col-lg-12"><center><img src={res.img} width="400" height="400"/> </center></div>
 			</div><br></br><br></br>
 				
-            <div class="features-icons-icon d-flex" >
+            <div class="features-icons-icon d-flex" style={{width:"60%"}} >
 <div class="col-lg-3">	<center><button class='btn btn-secondary'>Name</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.name}</button></center></div>
 			</div><br></br>
 			
-			 <div class="features-icons-icon d-flex" >
+			 <div class="features-icons-icon d-flex" style={{width:"60%"}} >
 <div class="col-lg-3">	<center><button class='btn btn-secondary'>Species</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.species}</button></center></div>
 			</div><br></br>
 			
-			   <div class="features-icons-icon d-flex" >
+			   <div class="features-icons-icon d-flex" style={{width:"60%"}} >
 <div class="col-lg-3">	<button class='btn btn-secondary'>Quantity</button></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.quantity}</button></center></div>
 			</div><br></br>
 			
-			<div class="features-icons-icon d-flex">
+			<div class="features-icons-icon d-flex" style={{width:"60%"}} >
 						
 		<div class="col-lg-3"><button class='btn btn-secondary'>Price</button></div><div class="col-lg-9"><center><button class='btn btn-success'> Rs.{res.price} </button></center></div>
             </div><br></br>
 			
-			<div class="features-icons-icon d-flex">
+			<div class="features-icons-icon d-flex" style={{width:"60%"}} >
 		 <div class="col-lg-12">	<button  class='btn btn-warning' id={res._id} onClick={this.fun1.bind(this,this.state.username,res._id)} style={{marginRight:"15px"}}>Add To Cart</button></div>
 		 <br></br><br></br><br></br>
 			</div>	

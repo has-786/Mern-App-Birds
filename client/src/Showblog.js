@@ -53,26 +53,26 @@ render()
       <div class="row" >
 
 		{this.state.arr.reverse().map( res=>( 
-	   <div class="col-lg-12" style={{width:"60%"}} >
+	   <div class="col-lg-12"  >
 	  <br></br><br></br>
 <center>
 					 <div class="row" >
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
 		  		<br></br>
 
-            <div class="features-icons-icon d-flex" >
+            <div class="features-icons-icon d-flex" style={{width:"60%"}} >
 					<div class="col-lg-3"><button class='btn btn-secondary'>Blog ID</button></div>
 					<div class="col-lg-9"><span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id}</span></div>
 			</div><br></br>
 						
-			<div class="features-icons-icon d-flex">
+			<div class="features-icons-icon d-flex" style={{width:"60%"}}>
 				  <div class="col-lg-3"><button class='btn btn-secondary'>Topic</button></div>
 		<div class="col-lg-9"><center><button class='btn btn-success'>{res.topic}</button></center></div>
 			</div><br></br>				
 
 			
 			<div class="features-icons-icon d-flex">
-		<div class="col-lg-12"><center><img src={res.img} alt='not found' width={300} height={400} /></center></div>
+		<div class="col-lg-12"><center><img src={res.img} alt='not found' width={400} height={400} /></center></div>
 			</div><br></br><br></br>
 			
 			<div class="features-icons-icon d-flex">

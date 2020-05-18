@@ -43,7 +43,7 @@ render()
  <center><h2 >MY BLOGS</h2></center>
  	<div><form onSubmit={this.fun.bind(this)}>
 <center><input type='text'  name='name'  id='1' required/>
-				<input type='submit'  value='Search' /></div>
+				<input type='submit'  value='Search' /></center>div>
            </form>	<br></br><br></br><br></br>	</div>
 <br></br><br></br>
 
@@ -53,7 +53,7 @@ render()
       <div class="row" >
 
 		{this.state.arr.reverse().map( res=>( 
-	   <div class="col-lg-6"  >
+	   <div class="col-lg-12"  >
 	  <br></br><br></br>
 <center>
 					 <div class="row" >

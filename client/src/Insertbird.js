@@ -53,7 +53,7 @@ fun2=(event)=>{
 		f.append('image',myfile); 				alert("Please Wait!! It may take some time");
 			
 	
-	fetch('https://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
+	fetch('http://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
 
 	return response.json()}).then((body)=>{ alert(JSON.stringify(body[0])) 
 	
@@ -61,7 +61,7 @@ fun2=(event)=>{
 	details:document.getElementById('details').value,img:'https://alibahadur.000webhostapp.com/uploads/'+myfile.name};
 	
 	fetch('/insertBird',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" }  }).then(response=>{
-	return response.json()}).then((body)=>{console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
+	return response.json()}).then((body)=>{ console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
 
 	
 	}  ).catch(err=>alert(JSON.stringify(err)));	

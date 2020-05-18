@@ -41,8 +41,8 @@ render()
     <div id='contain' class="container"   >
       <div class="row" >
 		{this.state.arr.map( res=>( 
-	    <div class="col-lg-4"  >		<br></br><br></br>
-			<div class="row" >
+	    <div class="col-lg-6"  >		<br></br><br></br>
+			<center><div class="row" >
 				<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
 		  		<br></br>
 
@@ -74,7 +74,7 @@ render()
 						
 					</div>
 				</div><br></br><br></br><br></br>
-			</div>	
+			</center></div>	
 		))}
 		</div>
 	 </div>
@@ -87,7 +87,7 @@ render()
   
   fun=(username,id)=>{
 	var data={"name":username,"id":id};   //   alert(JSON.stringify(data));
-		fetch('http://localhost:5000/removeFromCart',{ method: 'POST', body:JSON.stringify(data),
+		fetch('/removeFromCart',{ method: 'POST', body:JSON.stringify(data),
 		headers: {"Content-Type": "application/json" } }).then((response)=>{ return response.json()}).then(
  (body)=>{alert(body.msg); if(!body.length)document.getElementById(id).innerHTML='____'; }).catch(err=>console.log(err));
 }

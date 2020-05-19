@@ -23,7 +23,7 @@ componentDidMount()
 	if(this.state.username)alert("Hi "+this.state.username);
     
 	var data={name:this.state.username}; //this.setState({ position: 1 });
-	fetch('/showAllBirds',{ method: 'POST',body:JSON.stringify(data),
+	fetch('http://localhost:5000/showAllBirds',{ method: 'POST',body:JSON.stringify(data),
 		headers: {"Content-Type": "application/json" } }).then(response=>{
 	return response.json()}).then(
  (body)=>{this.setState({arr:body});  
@@ -36,8 +36,8 @@ render()
 {
 	
  return (
- <div style={{width:"100%"}}>
- <center><h2 style={{width:"100%"}}>STUDY THE BIRDS</h2></center>  	
+ <div >
+ <center ><h2 style={{width:"100%"}}>STUDY THE BIRDS</h2></center>  	
  <div><form onSubmit={this.fun.bind(this)}>
 	<center><input type='text'  name='name'  id='1' required/>
 				<input type='submit'  value='Search' /></center>
@@ -51,7 +51,7 @@ render()
 
 	   <div class="col-lg-12" >		<br></br><br></br>
 <center>
-					 <div class="row" >
+					 <div class="row"  >
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"lightgreen"}} >
 		  		<br></br>
 

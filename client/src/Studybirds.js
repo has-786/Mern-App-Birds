@@ -44,8 +44,7 @@ render()
            </form>	<br></br><br></br><br></br>	</div>
 <br></br><br></br>
 	<div id='show1'>
-	<section class="features-icons bg-light text-center"  >
-    <div id='contain' class="container"   >
+	
       <div class="row" >
 		{this.state.arr.map( res=>( 
 
@@ -87,7 +86,7 @@ render()
 
 				
 		))}
-		</div></div></section>
+		</div>
 	</div> 
 		
 	

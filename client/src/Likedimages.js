@@ -46,7 +46,7 @@ render()
 		<div class="col-lg-2"><button class='btn btn-info'>Tags</button></div><div class="col-lg-10"><center><button class='btn btn-success'> {res.tags} </button></center></div>
             </div><br></br>
 			<div class="features-icons-icon d-flex">
-				  <div class="col-lg-12"><img src width="100%"  height="300px" src={res.img} /></div>
+				  <div class="col-lg-12"><img src width="400"  height="400" src={res.img} /></div>
 			</div><br></br>
 		<div class="features-icons-icon d-flex" style={{width:"60%"}}>		
 	     	<div class="col-lg-4"><button class='btn btn-primary'>Likes</button></div><div class="col-lg-8"><button class='btn btn-warning' > {res.likes} </button></div>

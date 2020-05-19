@@ -47,7 +47,7 @@ render()
 						
 		<div class="col-lg-2"><button class='btn btn-info'>Tags</button></div><div class="col-lg-10"><center><button class='btn btn-success'> {res.tags} </button></center></div>
             </div><br></br>
-			<div class="features-icons-icon d-flex" style={{width:"60%"}}>
+			<div class="features-icons-icon d-flex" >
 		<div class="col-lg-12"><img  width="400"  height="400" src={res.img} /></div>
 			</div><br></br>
 		<div class="features-icons-icon d-flex" style={{width:"60%"}}>		

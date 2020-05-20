@@ -45,9 +45,10 @@ username=this.state.username;
 //
 render()
 {
-return (<div style={{width:"100%"}}>
+return ( 
+<div style={{width:"100%"}}>
 
- <center style={{width="100%"}}> <h2 style={{backgroundColor:"lightgreen",fontSize:"25pt",fontStyle:'bold',color:"purple",padding:"20px",marginTop:"0%"}}>
+ <center style={{width:"100%"}}> <h2 style={{backgroundColor:"lightgreen",fontSize:"25pt",fontStyle:'bold',color:"purple",padding:"20px",marginTop:"0%"}}>
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCisshD_AFuholwmD4pRX45UU4-GB25YDQyKlyr9P_5hlifqcI&usqp=CA" class='img img-circle'
  style={{float:"left",marginLeft:"0%",width:"150px" ,height:"100%"}}/>
  <span style={{fontFamily:'Dancing Script'}}>Welcome to AliBhai Birds</span><br></br><button class='btn btn-danger' >A Better Place to Learn and Love The Birds </button></h2>

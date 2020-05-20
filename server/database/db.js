@@ -1,6 +1,5 @@
 mongoose=require('mongoose');
 function con(mongoose){
-	//mongodb+srv://has123:<password>@cluster0-xzpel.mongodb.net/test
 	//mongodb+srv://has_123:yaali786@cluster0-okd19.mongodb.net/test
 	//mongodb://localhost/test
 mongoose.connect('mongodb+srv://has_123:yaali786@cluster0-okd19.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology: true});                

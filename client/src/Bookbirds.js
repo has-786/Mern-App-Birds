@@ -50,7 +50,7 @@ render()
 		{this.state.arr.map( res=>( 
       <div class="row" >
 <div class="col-lg-2"> </div>
-	    <div class="col-lg-12"  style={{width:"60%"}}>		<br></br><br></br>
+	    <div class="col-lg-6"  >		<br></br><br></br>
 <center>
 					 <div class="row" >
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >

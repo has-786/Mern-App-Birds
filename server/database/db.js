@@ -37,5 +37,12 @@ var order=mongoose.model('order',orderSchema);
 var blogSchema=new mongoose.Schema({topic:String,data:String,img:String,timestamp:String});
 var blog=mongoose.model('blog',blogSchema);
 
-module.exports={con:con,image:image,bird:bird,user:user,prod:prod,cart:cart,order:order,blog:blog,video:video};
+var userandroidSchema=new mongoose.Schema({email:String,pass:String});
+var userandroid=mongoose.model('userandroid',userandroidSchema);
+
+
+module.exports={con:con,image:image,bird:bird,user:user,prod:prod,cart:cart,order:order,blog:blog,video:video,userandroid:userandroid};
+
+
+
 

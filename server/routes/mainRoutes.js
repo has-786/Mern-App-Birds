@@ -57,7 +57,7 @@ require("./orderRoutes.js")(app,upload);
 
 require("./likedRoutes.js")(app);
 require("./unlikedRoutes.js")(app);
-//require("./register.js")();
+require("./register.js")(app);
 
 
 }

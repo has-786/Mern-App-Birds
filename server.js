@@ -5,8 +5,9 @@ const path=require('path');
 const bcrypt=require('bcryptjs');
 app=express();
 
-app.use(bodyParser.urlencoded({ extended: false }));  
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "200mb" }));
+app.use(bodyParser.urlencoded({ limit: "200mb",  extended: true, parameterLimit: 1000000 }));
+
 
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'client','build')));

@@ -10,7 +10,8 @@ import {connect} from "react-redux";
 
 class Insertbird extends Component{
 	constructor(props){
-		super(props);  this.state={username:null,amount:0,cause:null,timestamp:null};
+		super(props);  this.state={username:null,amount:0,cause:null,timestamp:null,base64:null};
+
 	}
 	
 	componentDidMount(){this.state.username=localStorage.getItem('user'); }
@@ -39,7 +40,6 @@ render()
 }
 
 
-
 fun2=(event)=>{
 		//if(!this.state.username){alert('Please Login First');return false;}
 		event.preventDefault();
@@ -48,11 +48,35 @@ fun2=(event)=>{
 		f.append('species',document.getElementById('species').value);
 		f.append('details',document.getElementById('details').value);
 
-
+        
 		var myfile=document.getElementById('image').files[0];
+		var input = document.getElementById('image');
+
+// You will receive the Base64 value every time a user selects a file from his device
+// As an example I selected a one-pixel red dot GIF file from my computer
+  var file = input.files[0],
+    reader = new FileReader();
+
+  reader.onloadend = function () {
+    // Since it contains the Data URI, we should remove the prefix and keep only Base64 string
+    var b64 = reader.result.replace(/^data:.+;base64,/, '');
+    alert(b64); //-> "R0lGODdhAQABAPAAAP8AAAAAACwAAAAAAQABAAACAkQBADs="
+				var data1={desc:"hi",name:myfile.name,img:b64};
+
+	fetch('http://localhost:5000/upload',{ method:'POST',body:JSON.stringify(data1),headers: {"Content-Type": "application/json" }  }).then(response=>{
+	return response.json()}).then((body)=>{ console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
+
+		
+  };
+  
+
+  reader.readAsDataURL(file);
+
 		f.append('image',myfile); 				alert("Please Wait!! It may take some time");
 			
-	
+		
+			
+	/*
 	fetch('https://alibahadur.000webhostapp.com/insertBird.php',{ method:'POST',body:f }).then(response=>{
 
 	return response.json()}).then((body)=>{ alert(JSON.stringify(body[0])) 
@@ -64,13 +88,11 @@ fun2=(event)=>{
 	return response.json()}).then((body)=>{ console.log(body); } ).catch(err=>alert(JSON.stringify(err)));	
 
 	
-	}  ).catch(err=>alert(JSON.stringify(err)));	
+	}  ).catch(err=>alert(JSON.stringify(err)));	*/
      
   }
 
 }
-
-
 
 const mapStateToProps = (state) => {
   return {

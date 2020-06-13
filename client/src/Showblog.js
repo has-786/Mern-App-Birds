@@ -36,6 +36,21 @@ fun=(event)=>{	    event.preventDefault();
  
 }
 
+changeDetails=(id,ind)=>
+{
+	var but=document.getElementById(id+'change');
+	if(but.innerHTML==='Read More')
+	{		document.getElementById(id+'details').innerHTML=this.state.arr[ind].data;
+			but.innerHTML='Read Less';
+	}
+	else
+	{
+		document.getElementById(id+'details').innerHTML=this.state.arr[ind].data.substring(0,500);
+			but.innerHTML='Read More';
+	}		
+	
+}
+
 render()
 {
  return (
@@ -51,48 +66,61 @@ render()
 	<section class="features-icons bg-light text-center"  >
     <div id='contain' class="container"   >
 
-		{this.state.arr.reverse().map( res=>( 
-		      <div class="row" >
-<div class="col-lg-3"></div>
-	   <div class="col-lg-6"  >
-	  <br></br><br></br>
-<center>
-					 <div class="row" >
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
-		  		<br></br>
+		{this.state.arr.reverse().map( (res,ind)=>( 
+		
+		
+<div style={{width:"100%"}}>
+		
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid white",borderRadius:"10px",backgroundColor:"pink"}} >
+		  						<br></br>		
 
-            <div class="features-icons-icon d-flex" >
-					<div class="col-lg-3"><button class='btn btn-secondary'> ID</button></div>
-					<div class="col-lg-9"><span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id}</span></div>
-			</div><br></br>
+				<div  class="row">
+							<div class="col-lg-12">
+								<button class='btn btn-secondary'>ID</button>
+								<span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id} </span>
+							</div>
+				</div>
+						<br></br>						<br></br>
+
+			
+				<div class="row" >
+					<div class="col-lg-12" style={{width:"100%"}}><p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Topic:</button>&nbsp; &nbsp; &nbsp; 
+					{res.topic}</p></div> 
+				</div>
+			
+			<div class="row" >
+			 <div class="col-lg-6">
+					<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"  >
 						
-			<div class="features-icons-icon d-flex" >
-				  <div class="col-lg-3"><button class='btn btn-secondary'>Topic</button></div>
-		<div class="col-lg-9"><center><button class='btn btn-success'>{res.topic}</button></center></div>
-			</div><br></br>				
+							<center><img src={res.img} alt='not found' width={"100%"} height={"100%"} /></center>
+					</div>	
+	         </div>
+			  <div class="col-lg-6"  >		
+					<center>
+						<div class="row" >
+					    	<div class="features-icons-icon d-flex">
+					 	     	<div class="col-lg-12">
+								 <center>
+								 <p class='junbotron' id={res._id+'details'} style={{borderRadius:'10px',backgroundColor:'white',fontFamily:"Sans-serif",border:'3px solid purple',padding:'5px', fontSize:"20px"}}>
+		                                {((res.data!=null)?res.data.substring(0,500):res.data)}
+							   	</p>		<button id={res._id+'change'} class='btn btn--sm btn-success' onClick={this.changeDetails.bind(this,res._id,ind)}>Read More</button>
 
-			
-			<div class="features-icons-icon d-flex">
-		<div class="col-lg-12"><center><img src={res.img} alt='not found' width="100%" height={400} /></center></div>
-			</div><br></br><br></br>
-			
-			<div class="features-icons-icon d-flex">
-					<div class="col-lg-12"><center><p class='junbotron' style={{borderRadius:'10px',backgroundColor:'white',border:'3px solid purple',padding:'5px', fontSize:"15px"}}>{res.data}</p></center></div>
-			</div><br></br><br></br>
-			
-			
-	
-				
-			<div class="features-icons-icon d-flex">
-				  <div class="col-lg-3"><button class='btn btn-secondary'>Date & Time</button></div>
-				  <div class="col-lg-9"><center><button class='btn btn-danger'> {res.timestamp} </button></center></div>
-			</div><br></br><br></br>
-			</div>
-		</div><br></br><br></br><br></br>
-	
-       </center> </div>		
-        <div class="col-lg-3"></div>
+								</center>
+							   </div>
+					        </div><br></br><br></br>
+				        </div>
+                   </center>
 				</div>	
+		   </div>		
+	   <div class="row">
+	      <div class="col-lg-12"><p  style={{padding:"5px", backgroundColor:"purple",color:"white"}}>Published on:&nbsp;&nbsp;&nbsp;{res.timestamp} </p></div>
+		</div>
+		   	   </div>	
+
+     </div>	
+		
+		
 
 		))}
 

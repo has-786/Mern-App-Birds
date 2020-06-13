@@ -19,7 +19,7 @@ app.get('*',(req,res)=>{
 
 require('./server/routes/mainRoutes.js')(app,bodyParser,path,bcrypt);
 
-port=process.env.PORT||5000;
+port=process.env.PORT || 5000;
 
 app.listen(port,()=>{console.log('Server On');});
 

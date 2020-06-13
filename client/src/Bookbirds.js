@@ -48,48 +48,56 @@ render()
 	<section class="features-icons bg-light text-center"  >
     <div id='contain' class="container"   >
 		{this.state.arr.map( res=>( 
+		<div style={{width:"100%"}}>
       <div class="row" >
-<div class="col-lg-2"> </div>
+	            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
+
 	    <div class="col-lg-6"  >		<br></br><br></br>
 <center>
-					 <div class="row" >
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"pink"}} >
-		  		<br></br>
-
-				    <div class="features-icons-icon d-flex" >
-<div class="col-lg-3">	<center><button class='btn btn-secondary'>ID</button></center></div><div class="col-lg-9" style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}><center>{res._id}</center></div>
-			</div><br></br><br></br>
-				
-				<div class="features-icons-icon d-flex" >
-				  <div class="col-lg-12"><center><img src={res.img} width="100%" height="400"/> </center></div>
-			</div><br></br><br></br>
-				
-            <div class="features-icons-icon d-flex"  >
-<div class="col-lg-3">	<center><button class='btn btn-secondary'>Name</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.name}</button></center></div>
+					 <div class="row" >	
+<div class="col-lg-12">	<center><button class='btn btn-secondary'>ID</button><p  style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id}</p></center></div>
+			         </div>
+			<br></br><br></br>
+					 <div class="row" >	
+<div class="col-lg-12"><p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Name:</button>&nbsp; &nbsp; &nbsp; 
+					{res.name} </p></div>
+			      </div>
+			<br></br>
+			
+					 <div class="row" >	
+<div class="col-lg-12"><p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Species:</button>&nbsp; &nbsp; &nbsp; 
+					{res.species}</p></div>
 			</div><br></br>
 			
-			 <div class="features-icons-icon d-flex"  >
-<div class="col-lg-3">	<center><button class='btn btn-secondary'>Species</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.species}</button></center></div>
+					 <div class="row" >	
+<div class="col-lg-12">	<p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Quantity:</button>&nbsp; &nbsp; &nbsp; 
+					{res.quantity} </p></div>
 			</div><br></br>
 			
-			   <div class="features-icons-icon d-flex" >
-<div class="col-lg-3">	<button class='btn btn-secondary'>Quantity</button></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.quantity}</button></center></div>
-			</div><br></br>
-			
-			<div class="features-icons-icon d-flex" >
+					 <div class="row" >	
 						
-		<div class="col-lg-3"><button class='btn btn-secondary'>Price</button></div><div class="col-lg-9"><center><button class='btn btn-success'> Rs.{res.price} </button></center></div>
+		<div class="col-lg-12"><p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Price:</button>&nbsp; &nbsp; &nbsp; 
+					 Rs.&nbsp;{res.price} </p></div>
             </div><br></br>
 			
-			<div class="features-icons-icon d-flex" >
-		 <div class="col-lg-12">	<button  class='btn btn-warning' id={res._id} onClick={this.fun1.bind(this,this.state.username,res._id)} style={{marginRight:"15px"}}>Add To Cart</button></div>
+					 <div class="row" >	
+		 <div class="col-lg-12">	<button  class='btn btn-danger' id={res._id} onClick={this.fun1.bind(this,this.state.username,res._id)} style={{marginRight:"15px"}}>Add To Cart</button></div>
 		 <br></br><br></br><br></br>
-			</div>	
-			</div>
-		</div><br></br><br></br><br></br>
+			    </div>	
+	</center>
+</div>
+	<div class="col-lg-6">	
+				 <center><img src={res.img} width="100%" height="100%"/></center>
+	</div>
+	<br></br><br></br>
+		</div>
+		<br></br><br></br><br></br>
 	
-       </center> </div>		
-<div class="col-lg-2"> </div>
+        </div>		
 		</div>		
 		))}
 		</div></section>

@@ -14,7 +14,7 @@ const MapWrapped = withScriptjs(withGoogleMap(Map));
 let username=null;
 
 class  Studybirds extends Component{
-constructor(props){ super(props);  this.state={path:"http://localhost:5000/",username:null,arr:[{name:null,species:null,details:null,img:null}],obj:{prodName:null,price:null,disease:null},msg:null}; 
+constructor(props){ super(props);  this.state={path:"http://localhost:5000",username:null,arr:[{name:null,species:null,details:null,img:null}],obj:{prodName:null,price:null,disease:null},msg:null}; 
   this.fun = this.fun.bind(this);  
 }
 componentDidMount()
@@ -46,47 +46,63 @@ render()
 	<div id='show1'>
 	<section class="features-icons bg-light text-center"  >
     <div id='contain' class="container"   >
-		{this.state.arr.map( res=>(       <div class="row" >
+		{this.state.arr.map( (res,ind)=>(   
 
-<div class="col-lg-3" ></div>	
-	   <div class="col-lg-6" >		<br></br><br></br>
-<center>
-					 <div class="row"  >
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid red",borderRadius:"10px",backgroundColor:"lightgreen"}} >
-		  		<br></br>
+<div style={{width:"100%"}}>
+		
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3" style={{border:"5px solid white",borderRadius:"10px",backgroundColor:"pink"}} >
+		  						<br></br>		
 
-				    <div class="features-icons-icon d-flex" style={{width:"100%"}}>
-<div class="col-lg-3" >	<center><button class='btn btn-secondary'>ID</button></center></div><div class="col-lg-9" style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}><center>{res._id}</center></div>
-			</div><br></br><br></br>
-				
-				
-				
-            <div class="features-icons-icon d-flex"   >
-<div class="col-lg-12"><center><img src={res.img} width="100%" height="400"/></center></div>
-			</div><br></br>
-				
-            <div class="features-icons-icon d-flex" >
-<div class="col-lg-3">	<center><button class='btn btn-secondary'>Name</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.name}</button></center></div>
-			</div><br></br>
-			
-					
-            <div class="features-icons-icon d-flex"  >
-<div class="col-lg-3">	<center><button class='btn btn-secondary'>Species</button></center></div><div class="col-lg-9"><center><button class='btn btn-primary'>{res.species}</button></center></div>
-			</div><br></br>
-			
-							
-            <div class="features-icons-icon d-flex" >
-	<div class="col-lg-12"><center><p class='jumbotron'  style={{borderRadius:'10px',backgroundColor:'purple',color:"white",fontFamily:"sans-serif-condensed-light",border:'3px solid purple',padding:'5px', fontSize:"18px"}}>{res.details}</p></center></div>
-			</div><br></br>
-				
-			
-			</div>
-		</div><br></br><br></br><br></br>
-	
-      </center>  </div>		
-<div class="col-lg-3" ></div>	
-
+				<div  class="row">
+							<div class="col-lg-12">
+								<button class='btn btn-secondary'>ID</button>
+								<span style={{border:"2px solid purple",backgroundColor:"cyan",padding:"5px",borderRadius:"10px"}}>{res._id} </span>
+							</div>
 				</div>
+						<br></br>						<br></br>
+
+			
+				<div class="row" >
+					<div class="col-lg-12" style={{width:"100%"}}><p style={{backgroundColor:"green",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Name:</button>&nbsp; &nbsp; &nbsp; 
+					 {res.name} </p></div> 
+				</div>
+				
+				<div class="row" >
+					<div class="col-lg-12" style={{width:"100%"}}><p style={{backgroundColor:"purple",color:"white",fontFamily:"Sans-serif-condensed",padding:"10px",fontSize:"20px"}}>
+					<button class="btn btn-sm btn-primary" style={{float:"left"}}>Species:</button>&nbsp; &nbsp; &nbsp; 
+					 {res.species}</p></div> 
+				</div>
+			<div class="row" >
+			 <div class="col-lg-6">
+					<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"  >
+						
+							<center><img src={res.img} alt='not found' width={"100%"} height={"100%"} /></center>
+					</div>	
+	         </div>
+			  <div class="col-lg-6"  >		
+					<center>
+						<div class="row" >
+					    	<div class="features-icons-icon d-flex">
+					 	     	<div class="col-lg-12">
+								 <center>
+								 <p class='junbotron' id={res._id+'details'} style={{borderRadius:'10px',backgroundColor:'white',fontFamily:"Sans-serif",border:'3px solid purple',padding:'5px', fontSize:"20px"}}>
+		                                {((res.details!=null)?res.details.substring(0,500):res.details)}
+							   	</p>		<button id={res._id+'change'} class='btn btn--sm btn-success' onClick={this.changeDetails.bind(this,res._id,ind)}>Read More</button>
+
+								</center>
+							   </div>
+					        </div><br></br><br></br>
+				        </div>
+                   </center>
+				</div>	
+		   </div>		
+   	   </div>	
+	   
+		
+     </div>	
+
+
 		
 		))}
 		</div>
@@ -97,6 +113,24 @@ render()
 </div>
   )
 }
+
+changeDetails=(id,ind)=>
+{
+	var but=document.getElementById(id+'change');
+	if(but.innerHTML==='Read More')
+	{		document.getElementById(id+'details').innerHTML=this.state.arr[ind].details;
+			but.innerHTML='Read Less';
+	}
+	else
+	{
+		document.getElementById(id+'details').innerHTML=this.state.arr[ind].details.substring(0,500);
+			but.innerHTML='Read More';
+	}		
+	
+}
+
+
+
  fun=(event)=>{
 	    event.preventDefault(); 
 		var data={"name":document.getElementById('1').value};      alert(JSON.stringify(data));

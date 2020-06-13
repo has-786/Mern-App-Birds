@@ -51,7 +51,7 @@ fun=(event)=>{
 	|| document.getElementById('5').value.length===0  ){alert('Please Fill The Required Places'); return false;}
 	var data={name:document.getElementById('1').value,email:document.getElementById('2').value,phone:document.getElementById('3').value,
 	pass:document.getElementById('4').value   };
-fetch('http://localhost:5000/localSignup',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then((response)=>{
+fetch('/localSignup',{ method:'POST',body:JSON.stringify(data),headers: {"Content-Type": "application/json" } }).then((response)=>{
 		return response.json()}).then((body)=>{ if(body.signin==='Signed up successfully'){username=body.username;} alert(body.signin); localStorage.setItem('user',username); 
 		
 		}).catch(err=>console.log(err));

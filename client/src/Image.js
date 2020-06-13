@@ -7,7 +7,7 @@ import {connect} from "react-redux";
 
 
 class  Image extends Component{
-constructor(props){ super(props);  this.state={path:"http://localhost:5000/",username:null,arr:[{name:null,tags:null,link1:null,_id:null,likes:null}],msg:null};
+constructor(props){ super(props);  this.state={path:"http://localhost:5000",username:null,arr:[{name:null,tags:null,link1:null,_id:null,likes:null}],msg:null};
 this.fun.bind(this); 
 }
 componentDidMount()

@@ -9,7 +9,7 @@ db=require('../database/db.js');
 con=db.con(mongoose);
 image=db.image;
 bird=db.bird;
-user=db.userandroid;
+user=db.user;
 cart=db.cart;
 prod=db.prod;
 order=db.order;
@@ -47,7 +47,7 @@ require("./imageRoutes.js")(app,upload);
 require("./videoRoutes.js")(app);
 require("./studyRoutes.js")(app,upload);
 
-//require("./loginRoutes.js")(app);
+require("./loginRoutes.js")(app);
 
 require("./blogRoutes.js")(app,upload);
 
@@ -57,7 +57,7 @@ require("./orderRoutes.js")(app,upload);
 
 require("./likedRoutes.js")(app);
 require("./unlikedRoutes.js")(app);
-require("./register.js")(app);
+//require("./register.js")(app);
 
 
 }

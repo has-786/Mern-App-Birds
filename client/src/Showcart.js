@@ -8,7 +8,7 @@ import {connect} from "react-redux";
 class Showcart extends Component{
 	constructor(props){
 		super(props);
-this.state={username:null,path:"http://localhost:5000/",arr:[{prodName:null,quantity:null,price:null,disease:null}],obj:{prodName:'',quantity:null,price:'',disease:''},msg:null,position:null}; 
+this.state={username:null,path:"http://localhost:5000",arr:[{prodName:null,quantity:null,price:null,disease:null}],obj:{prodName:'',quantity:null,price:'',disease:''},msg:null,position:null}; 
  this.fun = this.fun.bind(this);
  }
 	

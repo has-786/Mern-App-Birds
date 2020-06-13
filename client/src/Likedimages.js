@@ -14,7 +14,7 @@ componentDidMount()
 { 
 		this.state.username=localStorage.getItem('user');
 	var data={name:this.state.username};
-	fetch('/likedImages',{ method: 'POST',body:JSON.stringify(data),
+	fetch('http://localhost:5000/likedImages',{ method: 'POST',body:JSON.stringify(data),
 		headers: {"Content-Type": "application/json" } }).then(response=>{
 	return response.json()}).then(
  (body)=>{this.setState({arr:body});  document.getElementById('show1').style.opacity=1;}).catch(err=>console.log(err));	

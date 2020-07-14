@@ -50,7 +50,7 @@
   },
   "engines": {
     "node": "6.8.0",
-    "npm": "5.7.1"
+    "npm": "3.10.8"
   },
   "proxy": "http://localhost:5000"
 }

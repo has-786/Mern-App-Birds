@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="SEND" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/thelasthope2"
+        android:label="The lastHope"
+        android:roundIcon="@drawable/thelasthope2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".VideonextActivity"
+            android:parentActivityName=".VideoActivity">
+
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_VIDEO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BlognextActivity"
+            android:parentActivityName=".BlogActivity">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_NEWS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BrowserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="The lastHope"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_NOTIFY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.thelasthope.site"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="thelasthope.site"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="www.thelasthope.site"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+                <data
+                    android:host="thelasthope.site"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            <data
+                    android:host="open.thelasthope.app"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" />
+        <activity
+            android:name=".MarefatNextActivity"
+            android:parentActivityName=".MarefatActivity" />
+        <activity
+            android:name=".MarefatActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BioNextActivity"
+            android:parentActivityName=".BioActivity" />
+        <activity
+            android:name=".BioActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NamazAhadActivity"
+            android:parentActivityName=".NamazActivity" />
+        <activity
+            android:name=".ZiyaratAhadActivity"
+            android:parentActivityName=".ZiyaratActivity" />
+        <activity
+            android:name=".NamazActivity"
+            android:parentActivityName=".DNZActivity" />
+        <activity
+            android:name=".ZiyaratActivity"
+            android:parentActivityName=".DNZActivity" />
+        <activity
+            android:name=".DNZActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeetNextActivity"
+            android:parentActivityName=".MeetActivity" />
+        <activity
+            android:name=".QuizActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeetActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VideoActivity"
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
+        <activity
+            android:name=".BlogActivity"
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
+        <activity
+            android:name=".DuaAhadActivity"
+            android:parentActivityName=".DuaActivity" />
+        <activity
+            android:name=".DuaActivity"
+            android:parentActivityName=".DNZActivity" />
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/jamkaran_b" />
+    </application>
+
+
+</manifest>

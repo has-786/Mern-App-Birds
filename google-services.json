@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "942962467936",
+    "firebase_url": "https://thelasthope-62b0f.firebaseio.com",
+    "project_id": "thelasthope-62b0f",
+    "storage_bucket": "thelasthope-62b0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942962467936:android:a70ccd36d61b4ee8938f05",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942962467936-vvhdbjc9cnsvc10vue4rdh967mc9ssap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAavckIP7uELgOJhH5QYy0AnR55o5M5EuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942962467936-vvhdbjc9cnsvc10vue4rdh967mc9ssap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

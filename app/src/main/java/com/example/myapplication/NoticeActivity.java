@@ -83,7 +83,7 @@ public class NoticeActivity extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.d("myapp", "Something went wrong Haha");
-                    Toast.makeText(NoticeActivity.this, "error", Toast.LENGTH_LONG);
+                   // Toast.makeText(NoticeActivity.this, "error", Toast.LENGTH_LONG);
                 }
             });
             requestQueue.add(jsonArrayRequest);
@@ -125,7 +125,9 @@ public class NoticeActivity extends AppCompatActivity {
             }
             @Override
             public boolean onQueryTextChange(String newText) {
-                recyclerViewAdapter.getFilter().filter(newText);
+                if(recyclerViewAdapter!=null)
+
+                    recyclerViewAdapter.getFilter().filter(newText);
                 return false;
             }
 

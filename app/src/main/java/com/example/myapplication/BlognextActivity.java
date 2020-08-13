@@ -124,7 +124,7 @@ public class BlognextActivity extends AppCompatActivity {
                         obj.put("id", Integer.parseInt(id));
                         String[] r = arr1.getString("tag").split(" |,");
                         obj.put("tag", arr1.getString("tag"));
-                        for (int i = 0; i < r.length; i++) Log.d("myapp1", r[i]);
+                      //  for (int i = 0; i < r.length; i++) Log.d("myapp1", r[i]);
 
                         RequestQueue requestQueue = Volley.newRequestQueue(BlognextActivity.this);
                         JsonObjectRequest jsonArrayRequest = new JsonObjectRequest(Request.Method.POST,
@@ -136,7 +136,7 @@ public class BlognextActivity extends AppCompatActivity {
                                 try {
                                     arr = response.getJSONArray("msg");
                                     // Log.d("myapp1",response.getString("body"));
-                                    Log.d("myapp1", arr.length() + "");
+                                 //   Log.d("myapp1", arr.length() + "");
 
                                     recyclerViewAdapter = new RecyclerViewAdapter(BlognextActivity.this, arr);
                                     recyclerView.setAdapter(recyclerViewAdapter);
@@ -149,7 +149,7 @@ public class BlognextActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Log.d("myapp", "Something went wrong Haha");
-                                Toast.makeText(BlognextActivity.this, "error", Toast.LENGTH_LONG).show();
+                               // Toast.makeText(BlognextActivity.this, "error", Toast.LENGTH_LONG).show();
                             }
                         }) {
 
@@ -171,7 +171,7 @@ public class BlognextActivity extends AppCompatActivity {
                         t1.setText(arr1.getString("topic"));
                         t2.setText(arr1.getString("data").substring(0, Math.min(arr1.getString("data").length(), 300)));
                         t3.setText("Published On: " + arr1.getString("timestamp"));
-                        Log.d("myapp", arr1.getString("topic"));
+                      //  Log.d("myapp", arr1.getString("topic"));
 
                         // For Related Articles Now
 
@@ -184,7 +184,7 @@ public class BlognextActivity extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.d("myapp", "Something went wrong Haha");
-                    Toast.makeText(BlognextActivity.this, "error", Toast.LENGTH_LONG);
+                   // Toast.makeText(BlognextActivity.this, "error", Toast.LENGTH_LONG);
                 }
             }) {
 

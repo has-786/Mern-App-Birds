@@ -479,7 +479,7 @@ public class QuizActivity extends AppCompatActivity {
             arr.put(obj);
             obj=new JSONObject();
 
-            obj.put("ques","74. IMAME ZAMANA (ATFSS) KO 'QAYEM' KYU KAHA JATA HAI ?\n");
+            obj.put("ques","74. IMAME ZAMANA (ATFS) KO 'QAYEM' KYU KAHA JATA HAI ?\n");
             obj.put("ans","IMAME ZAMANA (ATFS) IMAME HUSAIN (AS) KE QATILO SE INTEQAM LEGE \n" +
                     "AUR INKE KHILAF QAYAM KAREGE ISLIYE AAPKO QAYEM KAHA JATA HAI");
             arr.put(obj);
@@ -603,12 +603,15 @@ public class QuizActivity extends AppCompatActivity {
             obj=new JSONObject();
 
             obj.put("ques","94. SHAHADATE IMAM ASKARI (AS) KE WAQT HUKAMARAN KAUN THA ?\n");
-            obj.put("ans","ABDUR RAHMAN");
+            obj.put("ans","MOATAMID IBNE MUTAWAKKIL");
             arr.put(obj);
             obj=new JSONObject();
 
             obj.put("ques","95. IMAME ZAMANA (ATFS) KI MAKHSUS NASHIHATGAHE KAUN KAUN SI HAI ?\n");
-            obj.put("ans"," DUA E AHAD");
+            obj.put("ans","1. MASJIDE JAMKARAN\n" +
+                    "2. MASJIDE KUFA\n" +
+                    "3. NAJAF KI WADIUS SALAM ME MAKAME SAHIBUL AMR (AS)\n" +
+                    "4. HILLA ME MAKAME SAHIBUL AMR (AS)");
             arr.put(obj);
 
 
@@ -657,7 +660,7 @@ public class QuizActivity extends AppCompatActivity {
             arr.put(obj);
             obj=new JSONObject();
 
-            obj.put("ques","103. IMAME ZAMANA (ATFS) KI FAUZ KE SALAAR KAUN KAUN HOGE ?\n");
+            obj.put("ques","103. IMAME ZAMANA (ATFS) KI FAUJ KE SALAAR KAUN KAUN HOGE ?\n");
             obj.put("ans","SHOEB BIN SALEH, IMAM SADIQ (AS) KE FARZAND HAZRAT ISMAEEL, \n" +
                     "HAZRAT AQEEL AUR IMAM SADIQ (AS) KE SAHABI MUFAZZAL IBNE UMAR ");
             arr.put(obj);
@@ -868,10 +871,10 @@ public class QuizActivity extends AppCompatActivity {
                     "UNHE US UNI KAPDE KA ");
             arr.put(obj);
             int len=arr.length();
-            Log.d("myapp2",""+len);
+            //Log.d("myapp2",""+len);
             for(int i=0;i<len;i++)
             {
-                Log.d("myapp2","fs"+i);
+               // Log.d("myapp2","fs"+i);
 
                 String s1=arr.getJSONObject(i).getString("ques");
                 String s2=arr.getJSONObject(i).getString("ans");
@@ -879,22 +882,28 @@ public class QuizActivity extends AppCompatActivity {
                 for(int j=0;j<s1.length();j++)
                 {
                     if((s1.charAt(j)>='A' && s1.charAt(j)<='Z' )|| (s1.charAt(j)>='a' && s1.charAt(j)<='z')){
-                        if(j==0 || s1.charAt(j-1)==' ')res1+=Character.toUpperCase(s1.charAt(j));
+                        if(j==0 || s1.charAt(j-1)==' '  || s1.charAt(j-1)==','
+                                || s1.charAt(j-1)=='.' || s1.charAt(j-1)==':'
+                                || s1.charAt(j-1)==';' || s1.charAt(j-1)=='"'
+                                || s1.charAt(j-1)+""=="'")res1+=Character.toUpperCase(s1.charAt(j));
                         else res1+=Character.toLowerCase(s1.charAt(j));}
                     else res1+=s1.charAt(j);
 
                 }
                 for(int j=0;j<s2.length();j++) {
                     if ((s2.charAt(j) >= 'A' && s2.charAt(j) <= 'Z') || (s2.charAt(j) >= 'a' && s2.charAt(j) <= 'z')) {
-                        if (j == 0 || s2.charAt(j - 1) == ' ')
+                        if (j == 0 || s2.charAt(j - 1) == ' '
+                                || s2.charAt(j-1)==','
+                                || s2.charAt(j-1)=='.' || s2.charAt(j-1)==':'
+                                || s2.charAt(j-1)==';' || s2.charAt(j-1)=='"'
+                                || s2.charAt(j-1)+""=="'")
                             res2 += Character.toUpperCase(s2.charAt(j));
                         else res2 += Character.toLowerCase(s2.charAt(j));
                     } else res2 += s2.charAt(j);
                 }
-                Log.d("myapp2",res1+" "+res2);
                 JSONObject obj1=new JSONObject();
-                obj1.put("ques",res1);
-                obj1.put("ans",res2);
+                obj1.put("ques",res1.trim());
+                obj1.put("ans",res2.trim());
 
                 arr.put(i,obj1);
 

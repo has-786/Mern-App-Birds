@@ -5,12 +5,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,7 +45,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         try {
             JSONObject obj = arr.getJSONObject(position);
             holder.ques.setText(obj.getString("ques"));
-            holder.ans.setText(obj.getString("ans"));
+            holder.ans.setText("");
+            String s="Show Answer";
+            holder.b.setText(s);
+            holder.ansConst.setText(obj.getString("ans"));
 
 
         }
@@ -63,7 +64,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView ques;
-        public TextView ans;
+        public TextView ans,ansConst;
         public Button b;
 
         public ViewHolder(@NonNull View itemView) {
@@ -72,8 +73,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             ques = itemView.findViewById(R.id.ques);
             ans = itemView.findViewById(R.id.ans);
+            ansConst = itemView.findViewById(R.id.ansConst);
+
             b = itemView.findViewById(R.id.b);
-            ans.setAlpha(0);
             b.setOnClickListener(this);
         }
 
@@ -82,8 +84,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             switch (view.getId())
             {
                 case R.id.b:
-                    if(b.getText().toString().equals("Show Answer")){ans.setAlpha(1);b.setText("Hide Answer");   }
-                    else {ans.setAlpha(0);b.setText("Show Answer");}
+                    if(b.getText().toString().equals("Show Answer")){String s="Hide Answer";ans.setText(ansConst.getText().toString());b.setText(s);   }
+                    else {String s="Show Answer"; ans.setText("");b.setText(s); }
                     break;
 
             }

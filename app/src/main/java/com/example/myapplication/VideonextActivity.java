@@ -95,13 +95,11 @@ public class VideonextActivity extends AppCompatActivity {
             final String id=id1;
             JSONObject obj = new JSONObject();
             obj.put("id", Integer.parseInt(id1));
-            JSONArray req = new JSONArray();
             requestQueue = Volley.newRequestQueue(this);
             jsonArrayRequest = new JsonObjectRequest(Request.Method.POST,
                     "http://thelasthope.site/showonevideo", obj, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
-                    String result;
                     try {
                         arr1 = response.getJSONArray("msg").getJSONObject(0);
                         //Toast.makeText(VideonextActivity.this, arr1.getString("tag"), Toast.LENGTH_LONG).show();
@@ -118,9 +116,6 @@ public class VideonextActivity extends AppCompatActivity {
                                 try {
                                     arr = response.getJSONArray("msg");
 
-                                                                       // Log.d("myapp1",response.getString("body"));
-                                    Log.d("myapp1",arr.length()+"");
-
                                     recyclerViewAdapter=new RecyclerViewAdapter(VideonextActivity.this,arr);
                                     recyclerView.setAdapter(recyclerViewAdapter);
 
@@ -132,7 +127,7 @@ public class VideonextActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Log.d("myapp", "Something went wrong Haha");
-                                Toast.makeText(VideonextActivity.this, "error", Toast.LENGTH_LONG).show();
+                          //      Toast.makeText(VideonextActivity.this, "error", Toast.LENGTH_LONG).show();
                             }
                         }) {
 
@@ -165,7 +160,7 @@ public class VideonextActivity extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.d("myapp", "Something went wrong Haha");
-                    Toast.makeText(VideonextActivity.this, "error", Toast.LENGTH_LONG);
+                  //  Toast.makeText(VideonextActivity.this, "error", Toast.LENGTH_LONG);
                 }
             }) {
 

@@ -28,6 +28,7 @@ import org.json.JSONObject;
 public class BlogActivity extends AppCompatActivity {
     JSONArray arr=new JSONArray();
     RecyclerViewAdapter recyclerViewAdapter;
+
     public  static String MSG="com.example.myapplication.BLOG";
 
     @Override
@@ -37,6 +38,7 @@ public class BlogActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("News & Blogs"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
         getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.green));
+
 
 
         final RecyclerView recyclerView=findViewById(R.id.recycle);
@@ -74,7 +76,7 @@ public class BlogActivity extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.d("myapp", "Something went wrong Haha");
-                   Toast.makeText(BlogActivity.this, "error", Toast.LENGTH_LONG);
+                  // Toast.makeText(BlogActivity.this, "error", Toast.LENGTH_LONG);
                 }
             });
             requestQueue.add(jsonArrayRequest);
@@ -95,6 +97,7 @@ public class BlogActivity extends AppCompatActivity {
             }
             @Override
             public boolean onQueryTextChange(String newText) {
+                if(recyclerViewAdapter!=null)
                 recyclerViewAdapter.getFilter().filter(newText);
                 return false;
             }

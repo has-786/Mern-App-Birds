@@ -3308,7 +3308,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "Imamate:    From Rajab 25, 183/September 1,799(for 20 years)\n" +
                 "\n" +
-                "Martyrdom:    Safar 29 or Safar 30,203/September 5 or September 6,818 in Tus, Iran\n" +
+                "Martyrdom:    Safar 17 ,203/August 24,818 in Tus, Iran\n" +
                 "\n" +
                 "Cause of Martyrdom:   By poisoning\n" +
                 "\n" +
@@ -3479,7 +3479,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "مدت امامت:\t\t20 سال (183 تا 203ھ)\n" +
                 "\n" +
-                "شہادت:\t\t30 صفر 203 ہجری۔\n" +
+                "شہادت:\t\t17 صفر 203 ہجری۔\n" +
                 "\n" +
                 "سبب شہادت:\tزہر سے مسموم\n" +
                 "\n" +
@@ -3669,7 +3669,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "Imamate:     From Safar 30, 203/September 6, 818(for 17 years)\n" +
                 "\n" +
-                "Martyrdom :    Dhu l-Qa'da 30, 220/November 25,835 in Kadhimiya, Iraq\n" +
+                "Martyrdom :    Dhu l-Qa'da 29, 220/November 24,835 in Kadhimiya, Iraq\n" +
                 "\n" +
                 "Burial Place:     Kazmain, Iraq,\n" +
                 "\n" +
@@ -3795,7 +3795,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "مدت امامت:\t\t17 سال (203 تا 220ھ)\n" +
                 "\n" +
-                "شہادت:\t\tسنہ 220 ہجری\n" +
+                "شہادت:29 زیقاد\t\tسنہ 220 ہجری\n" +
                 "\n" +
                 "مدفن:\t\tکاظمین، عراق\n" +
                 "\n" +
@@ -4227,7 +4227,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "Teknonym  Abu Muhammad\n" +
                 "\n" +
-                "Born   Rabi' II 8, 232/December 2, 846\n" +
+                "Born   Rabi' II 10, 232/December 4, 846\n" +
                 "\n" +
                 "Birthplace  Medina\n" +
                 "\n" +

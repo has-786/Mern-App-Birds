@@ -100,11 +100,7 @@ public class MarefatActivity extends AppCompatActivity {
                 "----------------------------\n");
 
 
-        esrc.add("Sahifa-e-Mahdiya\n [1] - The word habtar in Arabic language means the first that usurp the right of the divine sucessors.\n"+
-                "[2] - Al- Bihar 95: 306.\n" +
-                "[3] - Qur'an 89: 4\n" +
-                "[4] - Al-Bihar 24: 78.\n" +
-                "[5] - Qur'an 12: 87.");
+        esrc.add("Sahifa-e-Mahdiya");
 
 
         utitle.add("Sorry Not Available");
@@ -128,9 +124,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("Necessity of Prayers to the Leader of Time atfs");
 
-        esrc.add("Sahifa-e-Mahdiya\n [1] - Jamal Al-Usbuy : 307.\n" +
-                "[2] - Falahi Ssaa'il : 44.\n" +
-                "[3] - Mikyalil Makarim 1: 438.");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("Praying for the reappearance of our master, the God's remnant in the world is the most important prayer during the time of his occultation, because he is our companion, the leader of the time and the guardian of the worlds, how then do we heedless of him while he is our leader! Negligence of the Imam is negligence of one of the principle of Religion, and then we should initially pray for him before praying for ourselves, our family and our brothers.\n" +
                 "Sayyid Al-Ajal Ali bn Taa'us in his book title ''Jamal Al-Usbuy'' said: we have presented in the book the precise duty to be done during the day and night and the importance which the exemplary ones has previously given in their prayer for Imam Mahdi (peace be upon him) which implies that praying for him is very essential for the Muslims and the Believers. We have also related a narration under the supplication after (Zuhr) mid day prayer as supplication from Imam Ja'afar Sadiq bn Muhammad (peace be upon him) which he offers for Imam Mahdi (peace be upon him).\n" +
@@ -161,7 +155,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("The First Oppressed in This World");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - Bustanul Wilayat 2: 18");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("It is very unfortunate that people were heedless of praying for the quick reappearance of the leader of the time (May our souls be sacrifice for him). Had it been we are aware of our negligence to him we will realized that he was the first oppressed in this world.\n" +
                 "                We will mention below some instances where Imam (peace be upon him) was oppressed:\n" +
@@ -181,7 +175,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("An Admonition From Hajj Sheikh Rajab Ali Al-Khayat (May Allah be pleased with him)");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - What he has mentioned (may Allah raises his rank) was narrated from the Messenger of Allah (peace be upon him and his family) and Ayatullah Sheikh Ali Akbar Nahavandi has quoted the narration in his book 'Golzar Akbari'.\n");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("After we have clarified the necessity for offering prayer for the leader of the time (may our soul be sacrificed for him) it is compulsory for us not to focus our intention when supplicating only to reach some prestige rather we should pray to God seeking for His pleasure, nearness to Him and the awaiting leader (peace be upon him). Then you should aware of this matter. Sayyid Ashsharafi (may Allah be pleased with him) said: we do travel to different countries for the purpose of propagating Islam, in one of our journey which was very close to the holy month of Ramadan, I was along with some of my friends under the service of Hajj Sheikh Rajab Ali Al-Khayyat, we demanded him to teach and admonish us, he taught us how to use this holy verse: {And whosoever fears God }[1]\n" +
                 "He said: we should first give alms (sadaqah), fast for forty days and recite the verse while fasting. In a nutshell what was important in his explanation (may Allah raises his position) is as follow:\n" +
@@ -198,7 +192,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("An Important Experience of hajj Sheikh Hasan Ali Isfahani");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - My late father Al-Muazzam is one of the sincere companion to late Ayatullah Hajj Sayyid Ali Ridawi who was one of the scholar in the holy city of Mash'had.\n");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("Because we have talk about the person of Hajj Sheikh Hasan Isfahani in this discussion we will mention an important issue that concerns him.\n" +
                 "The Sheikh has engaged himself right from his youth with worships and Islamic devotion and endure a lot of inconveniencies in order to attain some spiritual ranks, he then have write up that is comprise of mysteries and an important point that he did not exposed or divulge to general people.\n" +
@@ -219,7 +213,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("Organizing Gatherings for Supplication\n");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - Mikyalil Makarim 2: 169.\n");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("It is possible to organize prayers collectively just like individual, that is by organizing gatherings in remembrance of Imam (peace be upon him). Such gatherings in addition to the prayer we offered for the Imam (peace be upon him) there are other good things that is included, like reviving the issues of the Imams and mentioning their traditions (peace be upon them) and so on.\n" +
                 "The writer of Al-Mikyal (may Allah raises his position) includes organizing gatherings in remembrance of the Imam among the duties of the creatures during the occultation of Imam (may our soul be sacrificed for him) mentioning during the gathering his virtues, merits, praying for him and spending our lives and money in this respect because that is among propagation of Islam, announcing the words of God, assisting good and faith, glorifying the signs of God and helping the friends of God.\n" +
@@ -233,7 +227,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("Be aware of the Duties during the time of occultation\n");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - Refer to another book by the author: (Daulat karimeh Imam Zaman) in Persian language.\n");
+        esrc.add("Sahifa-e-Mahdiya");
 
         edetails.add("With the success of God and the grace of Imam of the time (may our soul be sacrificed for him) we have authored this book just to be acquainted with one of the duty during the period of occultation, which is praying for the quick reappearance of the Imam (may our soul be sacrificed for him) but we ought to write from the beginning some other duties during the darkness and occultation hoping by God's Grace to accomplish the Imam being in the last stage of occultation. According to the tradition reported from the purified Imams, it is incumbent on us to be expecting both day and night the reappearance of the Imam (peace be upon him).\n" +
                 "But very unfortunate, our community up till now is not being acquainted with the whole duties during the period of occultation. The precious books written on this respect has mentioned some duties but not all, had it be people are aware of their missing condition at the earlier stage of occultation, it couldn't have taking longer time as it was now.\n" +
@@ -316,14 +310,8 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("The importance of paying attention to the awaiting leader\n");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - Al-Bihar 39: 349.\n" +
-                "[2] - Al-Bihar 72: 135.\n" +
-                "[3] - Darus Salam by Iraqi page 317, we have transmitted the entire issue in Sahifah al-Mahdiyyah: 296.\n" +
-                "[4] - Qur'an 17: 71.\n" +
-                "[5] - Al-Bihar 8: 10.\n" +
-                "[6] - Al-Bihar 53: 174\n" +
-                "[7] - Ziyarah Nudbah, it will be mention under the chapter of Ziyarah.\n" +
-                "[8] - Qur'an 12: 97.");
+        esrc.add("Sahifa-e-Mahdiya");
+
 
         edetails.add("We should be aware that paying attention to the awaiting Imam (peace be upon him) is same as paying attention to Allah like wise paying attention to the rest purified Imams is same as paying attention to Almighty Allah.\n" +
                 "So visiting the purified Imams and imploring with them necessitate paying attention to Almighty Allah because whoever intended Allah paid attention to them.\n" +
@@ -400,24 +388,8 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("The exalted rank of the awaited Imam (a.t.f.s) according to Ahlulbayt\n");
 
-        esrc.add("Sahifa-e-Mahdiya\n[1] - Al-Bihar 51: 91.\n" +
-                "[2] - Kifayatul Athar: 158; Al-Bihar 36: 337; and 51: 109.\n" +
-                "[3] - Al-Bihar 51: 131.\n" +
-                "[4] - The mother of the Imam (peace be on him) is one of the children of the roman king, for the purpose of being part of the house hold of the Prophet she pretend to be a slave girl and this has made her earn the mothership of the Imam, that is why she is refer to in the narration as the best of the slave girl\n" +
-                "[5] - Al-Bihar 51: 36.\n" +
-                "[6] - Al-Geibat Nu'mani: 229.\n" +
-                "[7] Al-Bihar 51: 121.\n" +
-                "[8] - Al-Bihar 51: 115.\n" +
-                "[9] - Nahju Balagah by Faiful Islam from sermon 26.\n" +
-                "[10] - Al- Gaibah by Nu'mani: 273.\n" +
-                "[11] - Al-Bihar 51: 139, 24, 241, 36, 394.\n" +
-                "[12] - Al-Gaibah by Nu'mani : 273; Al-Bihar 51: 148. In \"Aqd Darar\" this narration and other ones was ascribed to Aba Abdullah Al-Husein (peace be on him) instesd of Aba Abdullah Assadiq (peace be on him) , which is not correct due the chain of collectors of the tradition, although the mistake occurred due to similarity in their nickname.\n" +
-                "[13] - Falahi Ssa'il: 170.\n" +
-                "[14] - Biharul Anwar : 86: 81.\n" +
-                "[15] - Al-Gaibah by Nu'man: 180; Kamalu Ddeen: 370; Al-Bihar 51: 152; Ilzamu Nnasib 1: 221.\n" +
-                "[16] - Ilzamu Nnasib 1: 271.\n" +
-                "[17] - Al-Ghadeer 2: 361; Allamah Majlisi (may Allah have mercy on him) has narrated this type of narration in Bihar al-Anwar 51: 154.\n" +
-                "[18] - Ilzamu Nnasib 1: 271.\n");
+        esrc.add("Sahifa-e-Mahdiya");
+
 
         edetails.add("Knowing the exalted rank of our master, the leader of the time (peace be upon him) is an influencing way to bring people into path of anticipation.\n" +
                 "The narrations that came from Ahlulbayt regarding the greatness and the personality of the Imam, the leader of the time (may our soul be sacrificed for him) are very influential which necessitate astonishment in man.\n" +
@@ -545,7 +517,7 @@ public class MarefatActivity extends AppCompatActivity {
 
 //Start from Here Today
         etitle.add("Divine savior is assigned to set right all previous deviations, Imam Khomeini explained\n");
-        esrc.add("");
+        esrc.add("en.imam-khomeini.ir");
         edetails.add("Highlighting the significance of mid-Sh’aban which marks birth anniversary of Imam Mahdi (PBUH), the late founder of the Islamic Republic through a series of historic messages said the divine savior is assigned to set right all these perversions and deviations.\n" +
                 "\n" +
                 "ID:   63753   09/04/2020\n" +
@@ -572,7 +544,7 @@ public class MarefatActivity extends AppCompatActivity {
 
 
         etitle.add("Concepts of divine savior forms basic pillar of all divine religions, Imam Khomeini explained\n");
-        esrc.add("ar.imam-khomeini.ir");
+        esrc.add("en.imam-khomeini.ir");
         edetails.add("\n" +
                 "Imam Khomeini through his theological works and historic speeches stressed that the belief and concept of divine savior and reformer who would spread justice is considered to be a basic pillar of all divine religions. Followers of all divine religions have firm belief and faith in emergence of a divine savior who could relieve the world from clutches of cruelty, injustice and inequality.\n" +
                 "\n" +
@@ -604,7 +576,7 @@ public class MarefatActivity extends AppCompatActivity {
         etitle.add("Imam Khomeini: God has preserved The Promised Mahdī (atfs)");
         esrc.add("Sahifeh-ye-Imam, Vol.12, page 408\n" +
                 "\n" +
-                "ar.imam-khomeini.ir");
+                "en.imam-khomeini.ir");
         edetails.add("God has preserved The Promised Mahdī in reserve to carry out prophets' mission when God deems fit.\n" +
                 "\n");
 
@@ -615,7 +587,7 @@ public class MarefatActivity extends AppCompatActivity {
         etitle.add("Imam Khomeini: Imam Mahdi (atfs) will bring man from the abyss of depravation.");
         esrc.add("Sahifeh-ye-Imam, Vol.12, page 409\n" +
                 "\n" +
-                "ar.imam-khomeini.ir");
+                "en.imam-khomeini.ir");
         edetails.add("Imam Mahdi will bring man from the abyss of depravation. It is said: “He fills the earth with justice after having been replete with tyranny.”  \n" +
                 "\n");
 
@@ -624,7 +596,7 @@ public class MarefatActivity extends AppCompatActivity {
         udetails.add("Sorry Not Available");
 
         etitle.add("Imam Khomeini: Imam Mahdī (atfs) will spread righteousness");
-        esrc.add("Sahifeh-ye-Imam, Vol.12, page 409\n ar.imam-khomeini.ir");
+        esrc.add("Sahifeh-ye-Imam, Vol.12, page 409\n en.imam-khomeini.ir");
         edetails.add("Imam Mahdī will spread righteousness and the globe will be filled with justice at its various grades.  \n");
 
         utitle.add("Sorry Not Available");
@@ -632,7 +604,7 @@ public class MarefatActivity extends AppCompatActivity {
         udetails.add("Sorry Not Available");
 
         etitle.add("Imam Khomeini: The issue of the disappearance of the Imām Mahdi(atfs)");
-        esrc.add("Sahifeh-ye-Imam, Vol.12, page 408\n   ar.imam-khomeini.ir");
+        esrc.add("Sahifeh-ye-Imam, Vol.12, page 408\n   en.imam-khomeini.ir");
         edetails.add("The issue of the disappearance of the Imām Mahdi is a great matter that makes us to understand “Real justice should be spread in the world in its true sense.”\n");
 
         utitle.add("Sorry Not Available");
@@ -642,7 +614,7 @@ public class MarefatActivity extends AppCompatActivity {
 
 
         etitle.add("Imam Khomeini: The revolution of the Iranian people is the starting point");
-        esrc.add("ar.imam-khomeini.ir");
+        esrc.add("en.imam-khomeini.ir");
         edetails.add("The revolution of the Iranian people is the starting point for the grand revolution of the IslamicWorld under the stewardship of Hadrat Hujjah.\n" +
                 "\n");
 
@@ -652,7 +624,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("Imam Khomeini: 15th of Sha'ban Is the Most Auspicious and Significant Eid for Humanity\n" +
                 "\n");
-        esrc.add("ar.imam-khomeini.ir");
+        esrc.add("en.imam-khomeini.ir");
         edetails.add("Imam Khomeini the religious and spiritual leader of the Muslim world frequently used to highlight significance of the 15th Sha'ban, the birthday of twelfth infallible Imam known as savior-and described the event as the most significant Eid for all humankind.The belief for emergence of the contemporary infallible Imam is considered to be a firm pillar of Shia Muslims' beliefs which reminds us of hope, faith, ultimate fortune and victory of good powers. This belief is well- established and confirmed by the holy verses of noble Quran as well. \"And We wished to do a favor to those who were weak (and oppressed) in the land, and to make them rulers and to make them the inheritors.\" (al-Qasas, verse 5)This belief of great significance has been manifested in practical life of the founder of the Islamic Republic during all years of his righteous and sacred life. For an instance, one of his pupils once complained about the ongoing tough condition and circumstances, and expressed his doubts about the imminent victory during years of struggle for the Islamic Revolution. However, the great Imam consoled him and voiced his strong hope for victory despite all obstacles and hurdles.\"We will emerge victorious despite all tough circumstances,\" said the great Imam.The great leader of the Muslim world said elsewhere: \"I am hopeful that the certain day will approach when the promise of God will come true and the oppressed will become inheritors of the earth. These are promises and good tidings of God the Almighty which will never fall short and will fully be fulfilled.\"According to Imam Khomeini, the victory of goodness shows that the universe never stays impartial regarding the good and bad. It also indicates that creator of this world doesn't remain neutral about the occurrences and happenings of this universe.Imam had strong belief that the creator of humankind and all other creatures was managing this universe with a very deep perception and wisdom. For that reason, he sent a historic letter to the former president of the then Soviet union and maintained that the eastern and western blocs were suffering from lack of spirituality and confronted with social moral decline. The historical facts and figures show that the great Imam's prediction came true in this regard within some years. We may easily jump to the conclusion that the belief in emergence of the twelfth Imamthe saviorshould be interpreted as undertaking serious efforts to launch and establish justice across the world's societies. In this sense and context, everybody who takes concrete and solid steps to implement real justice, will be considered closely associated to the infallible savior. For that reason, the great Imam closely allied and linked the Islamic Revolution wit.");
 
         utitle.add("Sorry Not Available");
@@ -919,8 +891,6 @@ public class MarefatActivity extends AppCompatActivity {
         udetails.add("Sorry Not Available");
 
 
-
-
         etitle.add("Aghae Khamenei on Imam Mahdi(atfs)");
         esrc.add("Islamic Pulse Official Channel");
         edetails.add("As a people awaiting the Imam Mahdi (A) (the Savior), we should establish and build our lives directed upon the same path of our Imam (May hundreds of greetings and praise be upon him and may God hasten his return), today. Of course, we are too trivial to construct the same establishment that the divine friends of God made or will make, but we should work hard towards that path.\"\n");
@@ -943,7 +913,8 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("Becoming Distressed before the Reappearance");
         esrc.add("Agha Alireza Panahian Official Page-Famous Iranian scholar of Islamic studies & ethics, especially among youth & collogue students\n");
-        edetails.add("Reading the stories about the Household of the Prophet (‘a) and the details of their lives, increases our affection for them. However, not much information has been narrated from the Imam of the Time (‘a.j.) who has always been in Occultation. Instead, we should use our power of thinking more! For example, let’s think some about the amount Imam_Mahdi (‘a.j.) loves us. Why does he review the file of our actions every week? Is it due to his curiosity? Or, is it due to his fondness for us, like kind parents who care about their child’s educational status? Let’s not pass on this subject that easily. Let’s think about it. If we spend time thinking about this, it can transform us and increase our love for the Imam (‘a.j.).");
+        edetails.add("In the Holy Qur’an, the Almighty God says, “We shall test you with something of fear and hunger, and a decrease in goods, life and fruits. Give glad tidings to the patient.” [Qur’an 2:155] The traditions have said this verse is mainly about events before the Reappearance of the Imam of the Time (‘a.j.). The tests in this verse happen at the end of time, before the Reappearance of Imam Mahdi (‘a.j.) There are tribulations, which bring widespread fear. They cause deaths. They cause widespread financial problems. There are floods and devastation, which we can see in natural occurrences in the world. Why should these tribulations be so widespread before the Reappearance? Why should the introduction to the Reappearance be tribulations? A very important philosophy behind this, and we can see its wisdom in this widespread disease, is that human beings should understand the need for the management of God’s Guardian for the world. People should gain preparedness and acceptance of the governance of the Guardian from God. Even the murder of one oppressed person is important for the Almighty God. “When the buried female infant is asked for what crime she was slain.” [Qur’an 81:8-9] In the verses of the Holy Qur’an, God explicitly indicates that on the Day of Judgment He will line up billions of people. One of the key questions there is about for what crime that child was slain. This shows how important oppression is for the God of the universe. We human beings easily pass by oppression. We easily pass over the bombing of the oppressed people of Yemen. We easily pass over these. But, the Almighty God doesn’t pass over these. Understanding the necessity of the guardianship of the “Great Guardian from God” is not easy for many people, unless they understand the necessity of the guardianship of the “Great Guardian from God” with these widespread tribulations. Yes, the believers and knowledgeable people understand this necessity when they see one oppression somewhere. In the same way that we feel the need for the existence of the Imam because of this disease, they feel the same amount of need when they see ignorance in the world. In addition to the believers, how can the public understand this necessity? This is not something simple. This is why with widespread tribulations people must understand the necessity of the presence of the “Great Guardian from God” in the world and his governance. In the same amount that we deprive people from knowledge and spreading knowledge about the necessity of the governance of the Guardian from God, these tribulations will come instead. Do we want these tribulations to be less? We should look at the philosophy behind tribulations. The philosophy of tribulations is nothing but for people to understand that the management of the world by these corrupt people is impossible. What should we do for this oppression to be eliminated? The Guardian from God should become the ruler. The “Great Guardian from God” should govern the world.");
+
         utitle.add("Sorry Not Available");
         usrc.add("Sorry Not Available");
         udetails.add("Sorry Not Available");
@@ -951,7 +922,7 @@ public class MarefatActivity extends AppCompatActivity {
 
         etitle.add("How can we increase our affection for the Imam of the Time (‘a.j.)?");
         esrc.add("Agha Alireza Panahian Official Page-Famous Iranian scholar of Islamic studies & ethics, especially among youth & collogue students\n");
-        edetails.add("In the Holy Qur’an, the Almighty God says, “We shall test you with something of fear and hunger, and a decrease in goods, life and fruits. Give glad tidings to the patient.” [Qur’an 2:155] The traditions have said this verse is mainly about events before the Reappearance of the Imam of the Time (‘a.j.). The tests in this verse happen at the end of time, before the Reappearance of Imam Mahdi (‘a.j.) There are tribulations, which bring widespread fear. They cause deaths. They cause widespread financial problems. There are floods and devastation, which we can see in natural occurrences in the world. Why should these tribulations be so widespread before the Reappearance? Why should the introduction to the Reappearance be tribulations? A very important philosophy behind this, and we can see its wisdom in this widespread disease, is that human beings should understand the need for the management of God’s Guardian for the world. People should gain preparedness and acceptance of the governance of the Guardian from God. Even the murder of one oppressed person is important for the Almighty God. “When the buried female infant is asked for what crime she was slain.” [Qur’an 81:8-9] In the verses of the Holy Qur’an, God explicitly indicates that on the Day of Judgment He will line up billions of people. One of the key questions there is about for what crime that child was slain. This shows how important oppression is for the God of the universe. We human beings easily pass by oppression. We easily pass over the bombing of the oppressed people of Yemen. We easily pass over these. But, the Almighty God doesn’t pass over these. Understanding the necessity of the guardianship of the “Great Guardian from God” is not easy for many people, unless they understand the necessity of the guardianship of the “Great Guardian from God” with these widespread tribulations. Yes, the believers and knowledgeable people understand this necessity when they see one oppression somewhere. In the same way that we feel the need for the existence of the Imam because of this disease, they feel the same amount of need when they see ignorance in the world. In addition to the believers, how can the public understand this necessity? This is not something simple. This is why with widespread tribulations people must understand the necessity of the presence of the “Great Guardian from God” in the world and his governance. In the same amount that we deprive people from knowledge and spreading knowledge about the necessity of the governance of the Guardian from God, these tribulations will come instead. Do we want these tribulations to be less? We should look at the philosophy behind tribulations. The philosophy of tribulations is nothing but for people to understand that the management of the world by these corrupt people is impossible. What should we do for this oppression to be eliminated? The Guardian from God should become the ruler. The “Great Guardian from God” should govern the world.");
+        edetails.add("Reading the stories about the Household of the Prophet (‘a) and the details of their lives, increases our affection for them. However, not much information has been narrated from the Imam of the Time (‘a.j.) who has always been in Occultation. Instead, we should use our power of thinking more! For example, let’s think some about the amount Imam_Mahdi (‘a.j.) loves us. Why does he review the file of our actions every week? Is it due to his curiosity? Or, is it due to his fondness for us, like kind parents who care about their child’s educational status? Let’s not pass on this subject that easily. Let’s think about it. If we spend time thinking about this, it can transform us and increase our love for the Imam (‘a.j.).");
 
         utitle.add("Sorry Not Available");
         usrc.add("Sorry Not Available");
@@ -1111,6 +1082,10 @@ public class MarefatActivity extends AppCompatActivity {
                 else res+=s.charAt(j);
             }
             etitle.set(i,res.trim());
+            s=esrc.get(i)+"\n";
+            esrc.set(i,s);
+
+
 
             s=utitle.get(i);
             res="";
@@ -1122,6 +1097,9 @@ public class MarefatActivity extends AppCompatActivity {
                 else res+=s.charAt(j);
             }
             utitle.set(i,res.trim());
+            s=usrc.get(i)+"\n";
+            usrc.set(i,s);
+
 
         }
         Intent intent=getIntent();

@@ -78,7 +78,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             JSONObject obj = arr.getJSONObject(position);
             holder.english.setText(obj.getString("english"));
             holder.urdu.setText(obj.getString("urdu"));
-            if(holder.urdu.getText().toString().equals("امام کی معرفت"))holder.english.setTextSize(19);
             holder.img.setImageResource(images[position]);
             Picasso.get().load(images[position]).resize(95,95).into(holder.img);
         }

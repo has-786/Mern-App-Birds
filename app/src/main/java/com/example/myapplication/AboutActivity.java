@@ -32,40 +32,41 @@ public class AboutActivity extends AppCompatActivity {
 
             JSONObject obj=new JSONObject();
             obj.put("topic","Duas Namaz & Ziyarat");
-            obj.put("desc","دعائیں  نماز  اور  زیارت");
+            obj.put("desc","Find Duas, Namaz & Ziyarat here");
             arr.put(obj);
 
             obj=new JSONObject();
             obj.put("topic","Meetings With Imam");
-            obj.put("desc","امام سے ملاقات");
+            obj.put("desc","Read about The Meetings with Imam Mahdi (atfs)");
             arr.put(obj);
 
             obj=new JSONObject();
             obj.put("topic","Marefat of Imam");
-            obj.put("desc","امام کی معرفت");
+            obj.put("desc","Marefat of Imam Mahdi (atfs) is one of the most important factors");
             arr.put(obj);
 
 
             obj=new JSONObject();
             obj.put("topic","News & Blogs");
-            obj.put("desc","خبریں اور بلاگ");
+            obj.put("desc","Read Daily News & Blogs, especially related to Islam and Imam Mahdi (atfs)");
             arr.put(obj);
             obj=new JSONObject();
             obj.put("topic","Quiz On Imam");
-            obj.put("desc","امام پر کوئز");
+            obj.put("desc","Find lots of Questions and Answers based on Imam Mahdi (atfs)");
             arr.put(obj);
             obj=new JSONObject();
             obj.put("topic","Videos");
-            obj.put("desc","ویڈیوز");
+            obj.put("desc","Watch Islamic Videos especially related to Imam Mahdi (atfs)");
             arr.put(obj);
+
             obj=new JSONObject();
             obj.put("topic","Biographies");
-            obj.put("desc","سوانح حیات");
+            obj.put("desc","Read Biographies of Masumeen");
             arr.put(obj);
 
             obj=new JSONObject();
             obj.put("topic","Important Notices");
-            obj.put("desc","اہم نوٹس");
+            obj.put("desc","Get Notified About All the Islamic Events");
             arr.put(obj);
 
 

@@ -96,13 +96,13 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Born  :\t\t11 May 570 CE (Rabi' I 17, 53 BH)\n" +
+                "Born:\t\t11 May 570 CE (Rabi' I 17, 53 BH)\n" +
                 "\n" +
-                "Birthplace:\tMecca, ArabiaDiedc. 25 May 632 (aged 62)(Safar 28, 11 AH)\n" +
+                "Birthplace:\t\tMecca, ArabiaDiedc. 25 May 632 (aged 62)(Safar 28, 11 AH)\n" +
                 "\n" +
-                "Deathplace:\tMedina, Arabia\n" +
+                "Deathplace:\t\tMedina, Arabia\n" +
                 "\n" +
-                "Place of Burial:\tMedina, Arabia\n" +
+                "Place of Burial:\t\tMedina, Arabia\n" +
                 "\n" +
                 "Successor:\t\tAli b. Abi Talib (a) (As the first Imam of the Shia and Caliph)\n" +
                 "\n" +
@@ -114,9 +114,9 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "Son(s):\t\tQasim, 'Abd Allah, Ibrahim\n" +
                 "\n" +
-                "Daughter(s):\tFatima (a)\n" +
+                "Daughter(s):\t\tFatima (a)\n" +
                 "\n" +
-                "Descendants:\tAhl al-Bayt, Sayyids\n" +
+                "Descendants:\t\tAhl al-Bayt, Sayyids\n" +
                 "\n" +
                 "Titles:\t\tAbu l-Qasim (his Kunya), Amin (trustworthy), Rasul Allah (messenger of Allah); Mustafa (the chosen), Habib Allah(beloved one of Allah), Khayr Khalq Allah (the best of creatures of Allah), Khatam al-Nabiyyin(last of the propehts),\n" +
                 "Rahmat li-l-'Alamin (a blessing for the two worlds)\n" +
@@ -222,7 +222,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Enmity of Quraysh and Its Consequences\n" +
+                "Enmity of Quraysh and Its Consequences:\n" +
                 "\n" +
                 "As the number of Muslims grew faster, the chiefs of the Quraysh became more worried about it. They went to Abu Talib (the Prophet's (s) uncle and protector) and asked him to stop his nephew from the mission of Prophethood that he had started. They asked him to give Muhammad (s) over to them so that they could kill him and in return they offered Abu Talib the guardianship of Ammara b. al-Walidwho was -in their opinion- a handsome and wise young man. Abu Talib responded by exclaiming: \"Shall I give my son to you so that you can kill him and raise your son? What a difficult task![25]\n" +
                 "\n" +
@@ -402,7 +402,7 @@ public class BioActivity extends AppCompatActivity {
                     "\n" +
                     "اولاد:\t\tفاطمہؑ، قاسم، زینب، رقیہ، ام کلثوم، عبداللہ، ابراہیم۔\n" +
                     "\n" +
-                    "عمر:\t63 سال\n" +
+                    "عمر:\t\t63 سال\n" +
                     "\n" +
                     "\n" +
                     "\n" +
@@ -680,38 +680,38 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:\tAbu l-Hasan, Abu Turab, Abu l-Sibtayn, Abu l-Rayhanatayn, Abu l-A'imma.\n" +
+                "Teknonym:\t\tAbu l-Hasan, Abu Turab, Abu l-Sibtayn, Abu l-Rayhanatayn, Abu l-A'imma.\n" +
                 "\n" +
                 "Born:\t\tRajab 13, 23 BH/September 28, 600\n" +
                 "\n" +
-                "Birthplace:\tKa'ba, Mecca\n" +
+                "Birthplace:\t\tKa'ba, Mecca\n" +
                 "\n" +
                 "Imamate:\t\tFrom Safar 28, 11/May 25, 632(for 29 years)\n" +
                 "\n" +
                 "Reign:\t\t656 – 661\n" +
                 "\n" +
-                "Martyrdom:\tRamadan 21, 40/January 28, 661 in Mosque of Kufa\n" +
+                "Martyrdom:\t\tRamadan 21, 40/January 28, 661 in Mosque of Kufa\n" +
                 "\n" +
-                "Cause of Martyrdom: \tWhile performing morning prayer, he was struck with a sword by Abd al-Rahman b. Muljam al-Muradi and martyred from its injury two days later.\n" +
+                "Cause of Martyrdom:\t\tWhile performing morning prayer, he was struck with a sword by Abd al-Rahman b. Muljam al-Muradi and martyred from its injury two days later.\n" +
                 "\n" +
-                "Burial Place:\tNajaf \n" +
+                "Burial Place:\t\tNajaf \n" +
                 "\n" +
                 "Successor:\t\tAl-Hasan (a)\n" +
                 "(As the Second Imam of the Shia and Caliph, and As the Fifth of Rashidun Caliphate)\n" +
                 "\n" +
-                "Father:\t \tAbu Talib b. 'Abd al-Muttalib\n" +
+                "Father:\t\tAbu Talib b. 'Abd al-Muttalib\n" +
                 "\n" +
-                "Mother:\t  \tFatima bt. Asad\n" +
+                "Mother:\t\tFatima bt. Asad\n" +
                 "\n" +
-                "Brother(s): \tJa'far, 'Aqil, Talib\n" +
+                "Brother(s):\t\tJa'far, 'Aqil, Talib\n" +
                 "\n" +
                 "Spouse(s):\t\tFatima, Umama, Umm al-Banin, Layla, Asma', Sahba', Khawla\n" +
                 "\n" +
                 "Son(s):\t\tAl-Hasan, al-Husayn, Muhsin, 'Abbas, 'Abd Allah, Ja'far, 'Uthman, 'Ubayd Allah, Abu Bakr, Muhammad, 'Umar,...\n" +
                 "\n" +
-                "Daughter(s)\tZaynab, Umm Kulthum, Ruqayya,...\n" +
+                "Daughter(s):\t\tZaynab, Umm Kulthum, Ruqayya,...\n" +
                 "\n" +
-                "Descendants:\tSayyid, 'Alawi\n" +
+                "Descendants:\t\tSayyid, 'Alawi\n" +
                 "\n" +
                 "Titles:\t\tAmir al-Mu'minin (ruler of the believers) Bab Madinat al-Ilm (door to the city of knowledge\")\n" +
                 "al-Murtada (the chosen and contented one)\n" +
@@ -760,7 +760,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n" +
                 "Battles In Prophet's Life:\n" +
                 "\n" +
                 "In  2/624, in the Battle of Badr between the Muslims and the polytheists of Mecca, a large number of the latter's troops, including some of the chiefs of Quraysh, were killed by Ali (a).[31] \n" +
@@ -773,12 +773,12 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "Ghadeer Khumm:\n" +
                 "\n" +
                 "In 10/632, the Prophet (s) send Ali (a) on a mission to call the people of Yemen to Islam.[61] In the same year, the Prophet went on his last pilgrimage to Mecca,[62] and Ali joined him in Mecca from Yemen.[63] After the hajj, on his way back to Medina in an area called Ghadir Khumm, the Prophet (s) proclaimed Ali to be his successor and the executor of his will.[64] This event is known as the Event of Ghadir Khumm. Ali (a) was 33 years old at the time.\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n\n" +
                 "After Prophet:\n" +
                 "\n" +
                 "When Ali (a) was occupied with performing the burial rituals and ceremony for the Prophet (s), a group of the Companions gathered in Saqifaand elected Abu Bakr as the caliph and successor of the Prophet (s).\n" +
@@ -789,13 +789,13 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "His Caliphate:\n" +
                 "\n" +
                 "In Dhu l-Hijja, 35/June, 656 and after the assassination of Uthman, Ali (a) became the caliph and the leader of the Muslim ummah.\n" +
                 "\n" +
                 "Two days after the beginning of his caliphate, in his first sermon, Ali (a) urged that all the wealth and properties that had been unjustly taken must be returned, and emphasized justice with regard to the distribution of public properties and wealth.\n" +
-                "\n" +
+                "\n\n\n\n" +
                 "Battles as Caliph:\n" +
                 "\n" +
                 "In 36/656, Talha b. Ubayd Allah and Zubayr b. Awam broke their allegiance to Ali and headed to Mecca to join Aisha, who had called for revenge against the murderers of Uthman. With their supporters, Aisha, Talha, and Zubayr left Mecca for Basra to start the Battle of the Camel, the first civil war in the Muslim community. Imam Ali (A) defeated the opponent army here.\n" +
@@ -1077,35 +1077,35 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Born:   Jumada II 20, 9 BH/April 7, 614\n" +
+                "Born:\t\tJumada II 20, 9 BH/April 7, 614\n" +
                 "\n" +
-                "Place of Birth:  Mecca, Arabia\n" +
+                "Place of Birth:\t\tMecca, Arabia\n" +
                 "\n" +
-                "Places of Residence:  Mecca and Medina\n" +
+                "Places of Residence:\t\tMecca and Medina\n" +
                 "\n" +
-                "Martyrdom:  Jumada II 3, 11/August 26, 632\n" +
+                "Martyrdom:\t\tJumada II 3, 11/August 26, 632\n" +
                 "\n" +
-                "Cause of Martyrdom:  Injured after the attack on her house\n" +
+                "Cause of Martyrdom:\t\tInjured after the attack on her house\n" +
                 "\n" +
-                "Burial Place:  Medina (hidden grave)\n" +
+                "Burial Place:\t\tMedina (hidden grave)\n" +
                 "\n" +
-                "Father:  Prophet Muhammad (s)\n" +
+                "Father:\t\tProphet Muhammad (s)\n" +
                 "\n" +
-                "Mother:  Lady Khadija (a)\n" +
+                "Mother:\t\tLady Khadija (a)\n" +
                 "\n" +
-                "Brother(s):  Al-Qasim, 'Abd Allah, Ibrahim\n" +
+                "Brother(s):\t\tAl-Qasim, 'Abd Allah, Ibrahim\n" +
                 "\n" +
-                "Spouse(s):  Imam 'Ali (a)\n" +
+                "Spouse(s):\t\tImam 'Ali (a)\n" +
                 "\n" +
-                "Son(s):  al-Hasan (a), al-Husayn (a), al-Muhsin (a)\n" +
+                "Son(s):\t\tal-Hasan (a), al-Husayn (a), al-Muhsin (a)\n" +
                 "\n" +
-                "Daughter(s):  Zaynab (a), Umm Kulthum\n" +
+                "Daughter(s):\t\tZaynab (a), Umm Kulthum\n" +
                 "\n" +
-                "Descendants:  Ahl al-Bayt\n" +
+                "Descendants:\t\tAhl al-Bayt\n" +
                 "\n" +
-                "Epithets and Titles:  Sayyidat Nisa' al-'Alamin (the master of all the ladies in all the worlds), al-Batul, al-Zahra, al-Siddiqa (truthfull), al-Muhadditha (being talked by engels), al-Mansura (being helped), al-Tahira (the pure), and etc.KunyasUmm Abiha (the mother of her father), Umm al-A'imma (the mother of the Imams), Umm al-Hasan, Umm al-Husayn\n" +
+                "Epithets and Titles:\t\tSayyidat Nisa' al-'Alamin (the master of all the ladies in all the worlds), al-Batul, al-Zahra, al-Siddiqa (truthfull), al-Muhadditha (being talked by engels), al-Mansura (being helped), al-Tahira (the pure), and etc.KunyasUmm Abiha (the mother of her father), Umm al-A'imma (the mother of the Imams), Umm al-Hasan, Umm al-Husayn\n" +
                 "\n" +
-                "Activities:   Opposition to the decisions of Saqifa, Opposition to the usurpation of Fadak, Fadakiyya Sermon, Aiding the Opponents of Abu Bakr, Defense of Imam Ali (a),\n" +
+                "Activities:\t\tOpposition to the decisions of Saqifa, Opposition to the usurpation of Fadak, Fadakiyya Sermon, Aiding the Opponents of Abu Bakr, Defense of Imam Ali (a),\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -1367,25 +1367,25 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:   Abu Muhammad\n" +
-                "Born:   Ramadan 15, 3/March 1, 625\n" +
-                "Birthplace :   Medina\n" +
-                "Imamate:   From Ramadan 21, 40/January 28, 661(for 10 years)\n" +
-                "Reign:   661 – 661 (6 Months)\n" +
-                "Martyrdom:   Safar 28, 50/March 27, 670 in Medina\n" +
-                "Cause of Martyrdom:   By poisoning\n" +
-                "Burial Place:   Al-Baqi' cemetery\n" +
-                "Predecessor:   Ali b. Abi Talib (a)\n" +
-                "Successor:   Al-Husayn b. 'Ali (a)\n" +
-                "Father :   Ali b. Abi Talib (a)\n" +
-                "Mother :   Fatima bt. Muhammad (a)\n" +
-                "Brother(s):   Al-Husayn, 'Abbas, Muhammad,...\n" +
-                "Sister(s):   Lady Zaynab (a)\n" +
-                "Spouse(s):   Khawla, Umm Bashir, Umm Ishaq, Ja'da\n" +
-                "Son(s):   al-Qasim, Zayd, 'Abd Allah, Talha, al-Hasan, ...\n" +
-                "Daughter(s) :   Fatima,...\n" +
-                "Descendants:   Banu l-Hasan\n" +
-                "Titles:   al-Mujtaba (the chosen),al-Sibt(grandson),Sayyid Shabab Ahl al-Jannah(master of the youth of paradise),\n" +
+                "Teknonym:\t\tAbu Muhammad\n" +
+                "Born:\t\tRamadan 15, 3/March 1, 625\n" +
+                "Birthplace:\t\tMedina\n" +
+                "Imamate:\t\tFrom Ramadan 21, 40/January 28, 661(for 10 years)\n" +
+                "Reign:\t\t661 – 661 (6 Months)\n" +
+                "Martyrdom:\t\tSafar 28, 50/March 27, 670 in Medina\n" +
+                "Cause of Martyrdom:\t\tBy poisoning\n" +
+                "Burial Place:\t\tAl-Baqi' cemetery\n" +
+                "Predecessor:\t\tAli b. Abi Talib (a)\n" +
+                "Successor:\t\tAl-Husayn b. 'Ali (a)\n" +
+                "Father:\t\tAli b. Abi Talib (a)\n" +
+                "Mother:\t\tFatima bt. Muhammad (a)\n" +
+                "Brother(s):\t\tAl-Husayn, 'Abbas, Muhammad,...\n" +
+                "Sister(s):\t\tLady Zaynab (a)\n" +
+                "Spouse(s):\t\tKhawla, Umm Bashir, Umm Ishaq, Ja'da\n" +
+                "Son(s):\t\tal-Qasim, Zayd, 'Abd Allah, Talha, al-Hasan, ...\n" +
+                "Daughter(s):\t\tFatima,...\n" +
+                "Descendants:\t\tBanu l-Hasan\n" +
+                "Titles:\t\tal-Mujtaba (the chosen),al-Sibt(grandson),Sayyid Shabab Ahl al-Jannah(master of the youth of paradise),\n" +
                 "al-Zaki (the pure),al-Taqi (the pious),al-Sayyid (the master)\n" +
                 "\n" +
                 "\n" +
@@ -1533,7 +1533,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "شہادت:\t\t28 صفر، 50 ہجری\n" +
                 "\n" +
-                "سبب شہادت:\tجعدہ کے زہر سے مسموم\n" +
+                "سبب شہادت:\t\tجعدہ کے زہر سے مسموم\n" +
                 "\n" +
                 "مدفن:\t\tبقیع، مدینہ\n" +
                 "\n" +
@@ -1740,36 +1740,36 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:\tAbu 'Abd Allah\n" +
+                "Teknonym:\t\tAbu 'Abd Allah\n" +
                 "\n" +
-                "Born:\t                   Sha'ban 3, 4/January 8, 626\n" +
+                "Born:\t\tSha'ban 3, 4/January 8, 626\n" +
                 "\n" +
-                "Birthplace:\tMedina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:   \tFrom Safar 28, 50/March 27, 670(for 10 years)\n" +
+                "Imamate:\t\tFrom Safar 28, 50/March 27, 670(for 10 years)\n" +
                 "\n" +
-                "Contemporary Rulers:  Mu'awiya, Yazid\n" +
+                "Contemporary Rulers:\t\tMu'awiya, Yazid\n" +
                 "\n" +
-                "Martyrdom:\t       Muharram 10, 61/October 10, 680\n" +
+                "Martyrdom:\t\tMuharram 10, 61/October 10, 680\n" +
                 "\n" +
-                "Cause of Martyrdom:       At the Battle of Karbala\n" +
+                "Cause of Martyrdom:\t\tAt the Battle of Karbala\n" +
                 "\n" +
-                "Burial Place:                Karbala\n" +
+                "Burial Place:\t\tKarbala\n" +
                 "\n" +
-                "Predecessor:\tAl-Hasan b. 'Ali (a)\n" +
+                "Predecessor:\t\tAl-Hasan b. 'Ali (a)\n" +
                 "\n" +
-                "Successor:\t'Ali b. al-Husayn (a)\n" +
+                "Successor:\t\tAli b. al-Husayn (a)\n" +
                 "\n" +
-                "Father:\t'Ali b. Abi Talib (a)\n" +
+                "Father:\t\tAli b. Abi Talib (a)\n" +
                 "\n" +
-                "Mother:\tFatima bt. Muhammad (a)\n" +
+                "Mother:\t\tFatima bt. Muhammad (a)\n" +
                 "\n" +
-                "Brother(s):\tAl-Hasan, 'Abbas, Muhammad, ...\n" +
-                "Sister(s):\t             Zaynab, Umm Kulthum, ...\n" +
-                "Spouse(s): \tRabab, Layla, Umm Ishaq, Shahrbanu (?)\n" +
-                "Son(s):\t'Ali, 'Ali al-Akbar, 'Ali al-Asghar, ...\n" +
-                "Daughter(s):\tSukayna, Fatima, Zaynab, ...\n" +
-                "Titles:\tAl-Shahid (the martyr),al-Sibt (the grandson),\n" +
+                "Brother(s):\t\tAl-Hasan, 'Abbas, Muhammad, ...\n" +
+                "Sister(s):\t\tZaynab, Umm Kulthum, ...\n" +
+                "Spouse(s):\t\tRabab, Layla, Umm Ishaq, Shahrbanu (?)\n" +
+                "Son(s):\t\tAli, 'Ali al-Akbar, 'Ali al-Asghar, ...\n" +
+                "Daughter(s):\t\tSukayna, Fatima, Zaynab, ...\n" +
+                "Titles:\t\tAl-Shahid (the martyr),al-Sibt (the grandson),\n" +
                 "Sayyid Shabab Ahl al-Jannah (the master of the youth of paradise),\n" +
                 "Sayyid al-Shuhada (master of the martyrs)\n" +
                 "\n" +
@@ -2066,15 +2066,15 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Born:  Sha'ban 5, 38/January 6, 659\n" +
+                "Born:\t\tSha'ban 5, 38/January 6, 659\n" +
                 "\n" +
-                "Birthplace:  Medina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:  From Muharram 10, 61/October 10,680 (for 34 years)\n" +
+                "Imamate:\t\tFrom Muharram 10, 61/October 10,680 (for 34 years)\n" +
                 "\n" +
-                "Martyrdom:  Muharram 25,95/October 20, 713 in Medina\n" +
+                "Martyrdom:\t\tMuharram 25,95/October 20, 713 in Medina\n" +
                 "\n" +
-                "Cause of Martyrdom:  by Poisoning\n" +
+                "Cause of Martyrdom:\t\tby Poisoning\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -2212,7 +2212,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "شہادت:\t\t25 محرم، سنہ 95 ہجری\n" +
                 "\n" +
-                "سبب شہادت:\tمسمومیت ولید بن عبدالملک کے حکم سے\n" +
+                "سبب شہادت:\t\tمسمومیت ولید بن عبدالملک کے حکم سے\n" +
                 "\n" +
                 "مدفن:\t\tبقیع، مدینہ\n" +
                 "\n" +
@@ -2369,15 +2369,15 @@ public class BioActivity extends AppCompatActivity {
         str.add("Muḥammad ibne Ali ibne Hussain ibne Ali,\n" +
                 "known as Imam al-Baqir (A) and Baqir al-Ulum, was the fifth Imam of the Shi'a, whose period of Imamate lasted nineteen years.\n" +
                 "\n" +
-                "Born:   Rajab 1, 57/May 10, 677\n" +
+                "Born:\t\tRajab 1, 57/May 10, 677\n" +
                 "\n" +
-                "Birthplace:    Medina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:   From Muharram 25, 95/October 20, 713 (for 19 years)\n" +
+                "Imamate:\t\tFrom Muharram 25, 95/October 20, 713 (for 19 years)\n" +
                 "\n" +
-                "Martyrdom:   Dhu l-Hijja 7, 114/January 28, 733\n" +
+                "Martyrdom:\t\tDhu l-Hijja 7, 114/January 28, 733\n" +
                 "\n" +
-                "Cause of Martyrdom:   By poisoning\n" +
+                "Cause of Martyrdom:\t\tBy poisoning\n" +
                 "\n" +
                 "\n" +
                 "Imam al-Baqir (A) made a great scientific\n" +
@@ -2529,7 +2529,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "شہادت:\t\t7 ذی الحجہ سنہ 114ھ\n" +
                 "\n" +
-                "سبب شہادت:\tزہر سے مسموم\n" +
+                "سبب شہادت:\t\tزہر سے مسموم\n" +
                 "\n" +
                 "مدفن:\t\tجنت البقیع، مدینہ\n" +
                 "\n" +
@@ -2543,7 +2543,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "اولاد:\t\tامام جعفر صادق علیہ \u200Cالسلام، عبداللہ، ابراہیم، عبیداللہ، علی، زینب، ام سلمہ\n" +
                 "\n" +
-                "عمر:\t57 سال\n" +
+                "عمر:\t\t57 سال\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -2667,15 +2667,15 @@ public class BioActivity extends AppCompatActivity {
         str.add("Jaʿfar ibne Muḥammad ibne Ali ibne Hussain, known as Imam al-Sadiq (A) , is the sixth Imam of Imamiyya and the fifth Imam of Isam'ilis.\n" +
                 "\n" +
                 "\n" +
-                "Born:   Rabi' I 17, 83/April 20, 702\n" +
+                "Born:\t\tRabi' I 17, 83/April 20, 702\n" +
                 "\n" +
-                "Birthplace:   Medina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:   From Dhu l-Hijja 7, 114/28 January, 733 (for 34 years)\n" +
+                "Imamate:\t\tFrom Dhu l-Hijja 7, 114/28 January, 733 (for 34 years)\n" +
                 "\n" +
-                "Martyrdom:    Shawwal 25, 148/December 14, 765 in Medina\n" +
+                "Martyrdom:\t\tShawwal 25, 148/December 14, 765 in Medina\n" +
                 "\n" +
-                "Cause of Martyrdom: By Poisoning\n" +
+                "Cause of Martyrdom:\t\tBy Poisoning\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -2982,31 +2982,31 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Born:   Safar 7, 128/November 8, 745\n" +
+                "Born:\t\tSafar 7, 128/November 8, 745\n" +
                 "\n" +
-                "Birthplace:   Abwa'\n" +
+                "Birthplace:\t\tAbwa'\n" +
                 "\n" +
-                "Imamate:   From Shawwal 25, 148/December 14,765(for 35 years)\n" +
+                "Imamate:\t\tFrom Shawwal 25, 148/December 14,765(for 35 years)\n" +
                 "\n" +
-                "Martyrdom:    Rajab 25, 183/September 1, 799 in Baghdad\n" +
+                "Martyrdom:\t\tRajab 25, 183/September 1, 799 in Baghdad\n" +
                 "\n" +
-                "Cause of Martyrdom:   By poisoning\n" +
+                "Cause of Martyrdom:\t\tBy poisoning\n" +
                 "\n" +
-                "Burial:   Kazmain\n" +
+                "Burial:\t\tKazmain\n" +
                 "\n" +
-                "Successor:      Ali ibne Musa (A)\n" +
+                "Successor:\t\tAli ibne Musa (A)\n" +
                 "\n" +
-                "Father:     Ja'far ibne Muhammad (A)\n" +
+                "Father:\t\tJa'far ibne Muhammad (A)\n" +
                 "\n" +
-                "Mother :    Hamida al-Barbariyya\n" +
+                "Mother:\t\tHamida al-Barbariyya\n" +
                 "\n" +
-                "Spouse(s) :   Najma, ...\n" +
+                "Spouse(s):\t\tNajma, ...\n" +
                 "\n" +
-                "Son(s):    Ali (a), Ahmad, Hamza, Muhammad,Ishaq, Ibrahim, ...\n" +
+                "Son(s):\t\tAli (a), Ahmad, Hamza, Muhammad,Ishaq, Ibrahim, ...\n" +
                 "\n" +
-                "Daughter(s):   Fatima al-Kubra, ...\n" +
+                "Daughter(s):\t\tFatima al-Kubra, ...\n" +
                 "\n" +
-                "Titles:    al-'Abd al-Salih (the righteous servant),Bab al-Hawayij (gate to the wishes)\n" +
+                "Titles:\t\tal-'Abd al-Salih (the righteous servant),Bab al-Hawayij (gate to the wishes)\n" +
                 "\n" +
                 "\n" +
                 "After his father Imam Ja'far al-Sadiq (A) was martyred he became the Imam of Shi'a. The thirty five years of his imamate coincided with the caliphate of al-Mansur, al-Hadi, al-Mahdi, and Harun al-Rashid.\n" +
@@ -3300,31 +3300,31 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:   Abu l-Hasan\n" +
+                "Teknonym:\t\tAbu l-Hasan\n" +
                 "\n" +
-                "Born:    Dhu l-Qa'da 11, 148/December 29,765\n" +
+                "Born:\t\tDhu l-Qa'da 11, 148/December 29,765\n" +
                 "\n" +
-                "Birthplace:   Medina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:    From Rajab 25, 183/September 1,799(for 20 years)\n" +
+                "Imamate:\t\tFrom Rajab 25, 183/September 1,799(for 20 years)\n" +
                 "\n" +
-                "Martyrdom:    Safar 17 ,203/August 24,818 in Tus, Iran\n" +
+                "Martyrdom:\t\tSafar 17 ,203/August 24,818 in Tus, Iran\n" +
                 "\n" +
-                "Cause of Martyrdom:   By poisoning\n" +
+                "Cause of Martyrdom:\t\tBy poisoning\n" +
                 "\n" +
-                "Successor:   Muhammad b. 'Ali\n" +
+                "Successor:\t\tMuhammad b. 'Ali\n" +
                 "\n" +
-                "Father:    Musa ibne Ja'far\n" +
+                "Father:\t\tMusa ibne Ja'far\n" +
                 "\n" +
-                "Mother:    Najma Khatun\n" +
+                "Mother:\t\tNajma Khatun\n" +
                 "\n" +
-                "Brother(s):    Ahmad, Hamza, Muhammad, ...\n" +
+                "Brother(s):\t\tAhmad, Hamza, Muhammad, ...\n" +
                 "\n" +
-                "Sister(s):     Fatima, ...\n" +
+                "Sister(s):\t\tFatima, ...\n" +
                 "\n" +
-                "Spouse(s):      Sabika, Umm Habib\n" +
+                "Spouse(s):\t\tSabika, Umm Habib\n" +
                 "\n" +
-                "Son(s):     Muhammad\n" +
+                "Son(s):\t\tMuhammad\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -3343,7 +3343,7 @@ public class BioActivity extends AppCompatActivity {
                 "Wives:\n" +
                 "\n" +
                 "Imam al-Reza (A) had a wife named Sabika who is reported to be from the family of Maria, wife of the Prophet (s).\n" +
-                "\n" +
+                "\n\n\n" +
                 "Children:\n" +
                 "\n" +
                 "There is a disagreement about the numbers and names of the children of Imam al-Reza (A).\n" +
@@ -3362,7 +3362,7 @@ public class BioActivity extends AppCompatActivity {
                 "The period of imamate of Imam al-Reza (A) after his father was 20 years (183/799 - 203/818) which was contemporary with the caliphate of Harun al-Rashid, Muhammad al-Amin (approx. 5 years) and al-Ma'mun years; of which, the first 5 years was contemporary with Imam al-Rida (a)].\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n" +
                 "Tendencies of Shia:\n" +
                 "\n" +
                 "After the martyrdom of Imam al-Kazim (A), most Shia accepted the Imamate of Imam al-Reza (A), son of Imam al-Kazim (A) because of his will and other reasons and evidences.\n" +
@@ -3374,7 +3374,7 @@ public class BioActivity extends AppCompatActivity {
                 "They said that, \"Imam al-Kazim (A) was the last Imam and did not mention anyone as Imam or at least we are not aware of it.\" They were called Waqifids.\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n" +
                 "Position of Imam (a) in Medina:\n" +
                 "\n" +
                 "Imam al-Rida (a) lived 17 years of his Imamate in Medina (183 – 200/815-816 or 201/816-817) and had a great position among people.\n" +
@@ -3481,7 +3481,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "شہادت:\t\t17 صفر 203 ہجری۔\n" +
                 "\n" +
-                "سبب شہادت:\tزہر سے مسموم\n" +
+                "سبب شہادت:\t\tزہر سے مسموم\n" +
                 "\n" +
                 "مدفن:\t\tمشہد\n" +
                 "\n" +
@@ -3661,33 +3661,33 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:   Abu Ja'far, Abu 'Ali\n" +
+                "Teknonym:\t\tAbu Ja'far, Abu 'Ali\n" +
                 "\n" +
-                "Born:   Rajab 10, 195/April 8, 811\n" +
+                "Born:\t\tRajab 10, 195/April 8, 811\n" +
                 "\n" +
-                "Birthplace:    Medina, Arabia\n" +
+                "Birthplace:\t\tMedina, Arabia\n" +
                 "\n" +
-                "Imamate:     From Safar 30, 203/September 6, 818(for 17 years)\n" +
+                "Imamate:\t\tFrom Safar 30, 203/September 6, 818(for 17 years)\n" +
                 "\n" +
-                "Martyrdom :    Dhu l-Qa'da 29, 220/November 24,835 in Kadhimiya, Iraq\n" +
+                "Martyrdom:\t\tDhu l-Qa'da 29, 220/November 24,835 in Kadhimiya, Iraq\n" +
                 "\n" +
-                "Burial Place:     Kazmain, Iraq,\n" +
+                "Burial Place:\t\tKazmain, Iraq,\n" +
                 "\n" +
-                "Predecessor:    'Ali ibne Musa al-Rida (A)\n" +
+                "Predecessor:\t\tAli ibne Musa al-Rida (A)\n" +
                 "\n" +
-                "Successor::   'Ali ibne Muhammad al-Hadi(A)\n" +
+                "Successor:\t\tAli ibne Muhammad al-Hadi(A)\n" +
                 "\n" +
-                "Father:   Ali ibne Musa al-Rida (a)\n" +
+                "Father:\t\tAli ibne Musa al-Rida (a)\n" +
                 "\n" +
-                "Mother:    Sabika\n" +
+                "Mother:\t\tSabika\n" +
                 "\n" +
-                "Spouse(s):    Samana, Umm al-Fadl\n" +
+                "Spouse(s):\t\tSamana, Umm al-Fadl\n" +
                 "\n" +
-                "Son(s):    Ali, Musa\n" +
+                "Son(s):\t\tAli, Musa\n" +
                 "\n" +
-                "Daughter(s):    Fatima, Amama Abu Ja'far al-Thani\n" +
+                "Daughter(s):\t\tFatima, Amama Abu Ja'far al-Thani\n" +
                 "\n" +
-                "Titles:   al-Jawad (the generous), al-Taqi (the pious), Ibn al-Rida (Son of al-Rida)\n" +
+                "Titles:\t\tal-Jawad (the generous), al-Taqi (the pious), Ibn al-Rida (Son of al-Rida)\n" +
                 "\n" +
                 "He was born on Rajab 10, 195/April 8, 811 in Medina and was Imam for 17 years.\n" +
                 "\n" +
@@ -3787,7 +3787,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "کنیت:\t\tابو جعفر ثانی\n" +
                 "\n" +
-                "القاب:\tتقی، جواد\n" +
+                "القاب:\t\tتقی، جواد\n" +
                 "\t\n" +
                 "تاریخ ولادت:\t\t10 رجب 195 ہجری\n" +
                 "\n" +
@@ -3795,7 +3795,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "مدت امامت:\t\t17 سال (203 تا 220ھ)\n" +
                 "\n" +
-                "شہادت:29 زیقاد\t\tسنہ 220 ہجری\n" +
+                "شہادت:\t\t29 زیقاد سنہ 220 ہجری\n" +
                 "\n" +
                 "مدفن:\t\tکاظمین، عراق\n" +
                 "\n" +
@@ -3899,7 +3899,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "داؤد بن قاسم کہتے ہیں: \"ایک دن میں امام جوادؑ کے ہمراہ ایک باغ میں پہنچا اور میں نے عرض کیا: \"میں آپ پر فدا ہوجاؤں! میں مٹی اور گارا کھانے کا بہت شوقین ہوں؛ آپ دعا فرمائیں (تاکہ میں اس عادت سے چھٹکارا پاؤں)۔ آنجناب نے نے جواب نہیں دیا اور چند روز بعد بغیر کسی تمہید کے فرمایا: \"اے ابا ہاشم! خداوند متعال نے مٹی کھانے کی عادت تم سے دور کردی\"۔ ابو ہاشم کہتے ہیں: اس دن کے بعد میرے نزدیک مٹی کھانے سے زیادہ منفور چیز کوئی نہ تھی\"۔[66]\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "درخت پر پھل آ جانا:\n" +
                 "\n" +
                 "بغداد سے مدینہ واپسی کے وقت بڑی تعداد میں لوگ امام جوادؑ کو وداع کرنے کے لئے شہر سے باہر تک آئے۔ نماز مغرب کے وقت ایک مقام پر پہنچے جہاں ایک پرانی مسجد تھی۔ امامؑ نماز کے لئے مسجد میں داخل ہوئے۔ مسجد کے صحن میں سدر (بیری) کا ایک درخت تھا جس نے اس وقت تک پھل نہیں دیا تھا۔ امامؑ نے پانی منگوایا اور درخت کے پاس بیٹھ کر وضو کیا اور نماز جماعت ادا کی اور نماز کے بعد سجدہ شکر بجالائے اور بعدازاں بغدادیوں سے وداع کرکے مدینہ روانہ ہوئے۔ اس رات کے دوسرے روز اس درخت نے خوب پھل دیا؛ لوگ بہت حیرت زدہ ہوئے۔ مرحوم شیخ مفید کہتے ہیں: \"میں نے برسوں بعد اس درخت کو دیکھا اور اس کا پھل کھایا");
@@ -3949,33 +3949,33 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:   Abu l-Hasan\n" +
+                "Teknonym:\t\tAbu l-Hasan\n" +
                 "\n" +
-                "Born:   Dhu l-Hijja 15, 212/March 10, 828\n" +
+                "Born:\t\tDhu l-Hijja 15, 212/March 10, 828\n" +
                 "\n" +
-                "Birthplace:   Sarya\n" +
+                "Birthplace:\t\tSarya\n" +
                 "\n" +
-                "Imamate:    From November 29, 835/Dhu l-Qa'da 30, 220(for 34 years)\n" +
+                "Imamate:\t\tFrom November 29, 835/Dhu l-Qa'da 30, 220(for 34 years)\n" +
                 "\n" +
-                "Martyrdom:   Rajab 3, 254/July 2, 868\n" +
+                "Martyrdom:\t\tRajab 3, 254/July 2, 868\n" +
                 "\n" +
-                "Cause of Martyrdom:  By Poisoning\n" +
+                "Cause of Martyrdom:\t\tBy Poisoning\n" +
                 "\n" +
-                "Burial Place:  Samarra\n" +
+                "Burial Place:\t\tSamarra\n" +
                 "\n" +
-                "Successor:  Al-Hasan b. 'Ali (a)\n" +
+                "Successor:\t\tAl-Hasan b. 'Ali (a)\n" +
                 "\n" +
-                "Father:  Muhammad b. 'Ali (a)\n" +
+                "Father:\t\tMuhammad b. 'Ali (a)\n" +
                 "\n" +
-                "Mother:  Samana\n" +
+                "Mother:\t\tSamana\n" +
                 "\n" +
-                "Spouse(s):  Salil\n" +
+                "Spouse(s):\t\tSalil\n" +
                 "\n" +
-                "Son(s):  Al-Hasan, Muhammad, al-Husayn,Jafar\n" +
+                "Son(s):\t\tAl-Hasan, Muhammad, al-Husayn,Jafar\n" +
                 "\n" +
-                "Daughter(s):  'A'isha\n" +
+                "Daughter(s):\t\tA'isha\n" +
                 "\n" +
-                "Titles:  al-Naqi(the pure)\n" +
+                "Titles:\t\tal-Naqi(the pure)\n" +
                 "\n" +
                 "\n" +
                 "\n" +
@@ -4086,7 +4086,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "القاب:\t\tنجیب، مرتضی، ہادی، نقی، عالم، فقیہ، امین، طیّب\n" +
                 "\n" +
-                "تاریخ ولادت: \t15 ذوالحجہ ، سال 212  ھ\n" +
+                "تاریخ ولادت:\t\t15 ذوالحجہ ، سال 212  ھ\n" +
                 "\n" +
                 "جائے ولادت:\t\tصریا، مدینہ\n" +
                 "\n" +
@@ -4121,14 +4121,14 @@ public class BioActivity extends AppCompatActivity {
                 "آپ کا روضہ سامرا میں حرم عسکریین کے نام سے مشہور ہے۔ سنہ 2006 اور 2007 ء میں مختلف دہشت گردانہ حملوں میں اسے تباہ کیا گیا تھا جسے بعد میں پہلے سے بہتر انداز میں تعمیر کیا گیا ہے۔\n" +
                 "\n");
         str.add("\n" +
-                ":ولادت\n" +
+                "ولادت:\n" +
                 "کلینی، شیخ مفید، اور شیخ طوسی نیز ابن اثیر کے بقول امام ہادیؑ 15 ذوالحجہ سنہ 212 ہجری کو مدینہ کے قریب صریا نامی علاقے میں پیدا ہوئے\n" +
                 "\n" +
                 "\n" +
                 "\n" +
                 "\n" +
                 "\n" +
-                ":زوجہ اور اولاد\n" +
+                "زوجہ اور اولاد:\n" +
                 "\n" +
                 "امام ہادی علیہ السلام کی زوجہ \n" +
                 "مکرمہ کا نام سلیل خاتون تھا؛ وہ ام ولد تھیں اور ان کا تعلق \"نوبہ\" ۔[16] سے تھا اور وہی امام حسن عسکری علیہ السلام کی والدہ ماجدہ ہیں۔\n" +
@@ -4140,14 +4140,14 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                ":امامت\n" +
+                "امامت:\n" +
                 "امام ہادیؑ سنہ 220 ہجری میں اپنے والد امام جوادؑ کی شہادت کے بعد منصب امامت پر فائز ہوئے۔ ظاہر ہے کہ امام کی کمسنی کا مسئلہ امام جوادؑ کی امامت کے آغاز پر حل ہوچکا تھا چنانچہ اکابرین شیعہ کے لئے امامت کے وقت یہ مسئلہ حل شدہ تھا اور کسی کو کوئی شک و تردد پیش نہ آیا۔ شیخ مفید کے بقول[21] چند معدودافراد کے سوا امام جوادؑ کے پیروکاروں نے امام ہادیؑ کی امامت کو تسلیم کیا۔ متذکرہ معدود افراد کچھ عرصے کے لئے قم میں مدفون موسی بن محمد (متوفی  296ہجری ) المعروف بہ موسی مبرقع کی امامت کے قائل ہوئے؛ لیکن کچھ عرصہ بعد ان کی امامت کے عقیدے سے پلٹ گئے اور انھوں نے امام ہادیؑ کی امامت کو قبول کیا۔[22]   سعد بن عبد اللہ کہتے ہیں: یہ افراد اس لئے امام ہادیؑ کی امامت کی طرف پلٹ آئے کہ موسی مبرقع نے ان سے بیزاری اور برائت کا اظہار کیا اور انہیں بھگا دیا۔\n" +
                 "\n" +
                 "\n" +
                 "\n" +
                 "\n");
         str.add("\n" +
-                ":قرآن کی بنیادی حیثیت\n" +
+                "قرآن کی بنیادی حیثیت:\n" +
                 "\n" +
                 "امام ہادیؑ نے ایک مفصل رسالہ لکھا جس میں آپؑ نے قرآن کی بنیادی حیثیت پر زور دیا اور قرآن ہی کو روایات کی کسوٹی اور صحیح اور غیر صحیح کی تشخیص کا معیار قرار دیا۔قرآن کو ایک باضابطہ طور ایک ایسا متن قرار دیا کہ تمام اسلامی مکاتب فکر اس کی طرف رجوع کرتے ہیں۔ یہ رسالہ ابن شعبہ حرانی نے نقل کیا ہے۔\n" +
                 "\n" +
@@ -4164,7 +4164,7 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                ":علم کلام\n" +
+                "علم کلام:\n" +
                 "\n" +
                 "تشبیہ اور تنزیہ کی بحث میں ہشام بن حکم اور ہشام بن سالم کا موقف اور کلام شیعیان اہل بیتؑ کے درمیان اختلاف کا سبب بنااورآئمہؑ کو مسلسل اس قسم کے سوالات کا سامنا کرنا پڑتا تھا۔\n" +
                 "\n" +
@@ -4175,7 +4175,7 @@ public class BioActivity extends AppCompatActivity {
                 "دعا اور زیارت امام علی نقی ؑ کا ایک ایسا نمایاں کارنامہ ہے جس نے شیعیان اہل بیتؑ کی تربیت اور انہیں شیعہ معارف و تعلیمات سے روشناس کرنے میں اہم کردار ادا کیا ہے\n" +
                 "\n" +
                 "\n" +
-                ":زیارت جامعۂ کبیرہ\n" +
+                "زیارت جامعۂ کبیرہ:\n" +
                 "\n" +
                 "زیارت جامعۂ کبیرہ آئمہ معصومینؑ کا اہم ترین اور کامل ترین زیارت نامہ ہے جس کے ذریعے ان سب کی دور یا نزدیک سے زیارت کی جا سکتی ہے۔\n" +
                 "\n" +
@@ -4225,29 +4225,29 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym  Abu Muhammad\n" +
+                "Teknonym:\t\tAbu Muhammad\n" +
                 "\n" +
-                "Born   Rabi' II 10, 232/December 4, 846\n" +
+                "Born:\t\tRabi' II 10, 232/December 4, 846\n" +
                 "\n" +
-                "Birthplace  Medina\n" +
+                "Birthplace:\t\tMedina\n" +
                 "\n" +
-                "Imamate:    From Rajab 3, 254/June 28, 868(for 6 years)\n" +
+                "Imamate:\t\tFrom Rajab 3, 254/June 28, 868(for 6 years)\n" +
                 "\n" +
-                "Martyrdom: Rabi' I 8, 260/January 1, 874 in Samarra\n" +
+                "Martyrdom:\t\tRabi' I 8, 260/January 1, 874 in Samarra\n" +
                 "\n" +
-                "Cause of Martyrdom:    By poisoning\n" +
+                "Cause of Martyrdom:\t\tBy poisoning\n" +
                 "\n" +
-                "Successor:    Muhammad b. al-Mahdi (a)\n" +
+                "Successor:\t\tMuhammad b. al-Mahdi (a)\n" +
                 "\n" +
-                "Father:    Ali b. Muhammad (a)\n" +
+                "Father:\t\tAli b. Muhammad (a)\n" +
                 "\n" +
-                "Mother:   Hudayth\n" +
+                "Mother:\t\tHudayth\n" +
                 "\n" +
-                "Brother(s):   Muhammad, al-Husayn, Ja'far\n" +
+                "Brother(s):\t\tMuhammad, al-Husayn, Ja'far\n" +
                 "\n" +
-                "Spouse(s):   Narjis\n" +
+                "Spouse(s):\t\tNarjis\n" +
                 "\n" +
-                "Titles:   Ibn al-Rida,al-Hadi, al-Naqi\n" +
+                "Titles:\t\tIbn al-Rida,al-Hadi, al-Naqi\n" +
                 "\n" +
                 "He was given the title, Imam al-Askari, because he was forced to reside in Samarra which was also known as \"Askar\" (a military camp or town). His other titles include Ibn al-Rida,al-Hadi, al-Naqi, al-Zaki, al-Rafiq and al-Samit.\n" +
                 "\n" +
@@ -4306,14 +4306,14 @@ public class BioActivity extends AppCompatActivity {
                 "Another teaching, repeatedly seen in the speeches of Imam (a) due to the pressures on Shi'a, is calling them to patience and believing in relief and waiting for it.[64] Also, in hadiths from him, there is an especial emphasis on respecting internal relations of Shi'a society and associating with religious brothers.[65]\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "Interpretation of the Qur'an:\n" +
                 "\n" +
                 "Interpreting the Qur'an was among the activities Imam al-Hasan al-'Askari (a)\n" +
                 "cared about so much that an extensive text on the interpretation of the Qur'an (among the oldest exegetical heritage of Shi'a) is attributed to him. Even if this attribution is not correct, it should be noted that Imam's (a) emphasis on exegetical discussions made the grounds for this attribution.\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "Theology and Beliefs:\n" +
                 "\n" +
                 "Imam al-Hasan al-Askari (a) took the leadership of Shi'a when some ideological problems had emerged among Twelver Shi'a decades prior to his time and some emerged at his time. For example, one of\n" +
@@ -4323,7 +4323,7 @@ public class BioActivity extends AppCompatActivity {
                 "Imam al-'Askari (a) prohibited them from going deep in discussions about the essence of God, mentioned some verses of the Qur'an and said: \"God is One and Unique; begets not, nor was He begotten and nothing is similar to Him. He is the Creator and not created. Whatever He wants of things or else creates and is not embodied… Nothing is similar to Him and He is Hearing and Seeing.\"[66]\n" +
                 "\n" +
                 "\n" +
-                "\n" +
+                "\n\n\n" +
                 "Jurisprudence:\n" +
                 "\n" +
                 "In hadith studies, one of the titles mentioned for Imam al-Hasan al-'Askari (a) is \"faqih\",[67] with which he (a) was especially known to his companions. Some of his hadiths are about jurisprudence and its different branches. Since organization of religion regarding jurisprudence was made previously at the time of Imam al-Sadiq (a) and was then developed toward its perfection, Imam al-Hasan al-'Askari (a) mostly discussed about secondary issues which came up or were for some reason critical at his time such as the beginning of the month of Ramadan and the discussions about Khums.[68]\n" +
@@ -4511,9 +4511,9 @@ public class BioActivity extends AppCompatActivity {
                 "\n" +
                 "\n" +
                 "\n" +
-                "Teknonym:\tAbu l-Qasim\n" +
+                "Teknonym:\t\tAbu l-Qasim\n" +
                 "Born:\t\tSha'ban 15, 255/July 29, 869\n" +
-                "Birthplace:\tSamarra\n" +
+                "Birthplace:\t\tSamarra\n" +
                 "Imamate:\t\tFrom Rabi' I 8, 260/January 1, 874 till present\n" +
                 "Father:\t\tAl-Hasan b. 'Ali (a)\n" +
                 "Mother:\t\tNarjis\n" +
@@ -4608,7 +4608,7 @@ public class BioActivity extends AppCompatActivity {
     str.add("\n" +
             "\n" +
             "Several hadiths predicted the birth and occultation of Imam al-Mahdi (a), before his birth. Many hadiths also speak about his rule. According to these hadiths, he is the Imam who will rise by God's command and establish a universal rule. Before his uprising, he has two periods of occultation, one of which is longer than the other. The Minor Occultation started from the birth of the Imam until 329/940, when the last \"special deputy\" of the Imam (a) passed away. After that, the Major Occultation started, which will end when he will rise against the injustice and oppression that fills the world.\n" +
-            "\n" +
+            "\n\n\n" +
             "Minor Occultation:\n" +
             "\n" +
             "There are disagreements over when the Minor Occultation began. Some people believe that it began with the birth of Imam al-Mahdi (a) in 255/869, and thus, it lasted for seventy four years. But some others believe that it began since the martyrdom of Imam al-Hasan al-'Askari (a) in 260/874 in which case the Minor Occultation lasted for sixty nine years.\n" +

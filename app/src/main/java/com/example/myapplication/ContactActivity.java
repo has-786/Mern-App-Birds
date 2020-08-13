@@ -19,7 +19,6 @@ public class ContactActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
 
        final TextView email=findViewById(R.id.email);
-        final TextView phone=findViewById(R.id.phone);
         final TextView youtube=findViewById(R.id.youtube);
         final TextView facebook=findViewById(R.id.facebook);
         final  TextView insta=findViewById(R.id.insta);

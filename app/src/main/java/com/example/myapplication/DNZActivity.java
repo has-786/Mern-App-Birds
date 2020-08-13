@@ -23,7 +23,7 @@ public class DNZActivity extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.green));
 
         final RecyclerView recyclerView=findViewById(R.id.recycle);
-        Toast.makeText(DNZActivity.this,"Hi Syed",Toast.LENGTH_LONG).show();
+       // Toast.makeText(DNZActivity.this,"Hi Syed",Toast.LENGTH_LONG).show();
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         JSONArray arr=new JSONArray();

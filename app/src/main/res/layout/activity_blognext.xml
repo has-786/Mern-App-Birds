@@ -72,19 +72,18 @@
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="match_parent"
-                android:layout_height="295dp"
-                android:cropToPadding="false"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/jamkaran_a"
-                tools:layout_editor_absoluteY="44dp" />
+                app:srcCompat="@drawable/thelasthope2" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="#ebd6c1"
+                app:cardBackgroundColor="@color/lightgray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -101,15 +100,14 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="30dp"
+                        android:background="@color/lightgray"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:padding="5dp"
-                        android:text="TextTextViewTextViewTextViewTextViewTextView
-                        TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView
-                        TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView
-                        TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView
-                        TextViewTextViewView"
-                        android:textColor="@color/black"
-                        android:textSize="20dp"
+                        android:padding="10sp"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -146,7 +144,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/t4"
+                android:id="@+id/t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"

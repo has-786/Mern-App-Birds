@@ -907,12 +907,6 @@ public class QuizActivity extends AppCompatActivity {
 
         String res = "";
 
-try {
-    for (int i = 127; i <134; i++) {
-        res += "ques.push(\"" + arr.getJSONObject(i).getString("ques")+ "\")\nans.push(\"" + arr.getJSONObject(i).getString("ans") + "\")\n";
-
-    }
-}catch (Exception e){}
 
 Log.d("myapp1",res+arr.length());
 

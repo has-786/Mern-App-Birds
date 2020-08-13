@@ -43,9 +43,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         activities.add(ZiyaratActivity.class);
 
 
-        images[0]=R.drawable.imam4;
-        images[1]=R.drawable.imam2;
-        images[2]=R.drawable.imam3;
+        images[0]=R.drawable.dua;
+        images[1]=R.drawable.namaz;
+        images[2]=R.drawable.ziyarat;
 
 
     }
@@ -95,6 +95,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, activities.get(this.getAdapterPosition()));
             i.putExtra(MSG,Integer.toString(this.getAdapterPosition()));
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
     }

@@ -6,7 +6,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
 import android.media.Image;
 import android.net.Uri;
@@ -15,7 +17,7 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.media.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -27,10 +29,14 @@ import com.android.volley.toolbox.Volley;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import org.json.JSONObject;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.URI;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,8 +54,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if(remoteMessage.getNotification()!=null) {
             String title = remoteMessage.getNotification().getTitle();
             String body = remoteMessage.getNotification().getBody();
-           // Uri image=null;
-            //image=remoteMessage.getNotification().getImageUrl();
+            Uri image=null;
+            image=remoteMessage.getNotification().getImageUrl();
             //Log.d("myapp1",image.getPath());
 
             //f.setIconImage(new ImageIcon(image).getImage());
@@ -75,16 +81,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 }
             }
 
+
             PendingIntent pIntent = PendingIntent.getActivity(this, (int) System.currentTimeMillis(), intent, 0);
 
-            Notification n = new Notification.Builder(this)
+            Notification n = new NotificationCompat.Builder(this,"channelID")
                     .setContentTitle(title)
                     .setContentText(body)
-                    .setSmallIcon(R.drawable.jamkaran_b)
+                    .setSmallIcon(R.drawable.marefat)
                     .setContentIntent(pIntent)
-                    .setPriority(Notification.PRIORITY_DEFAULT)
+                    .setSound(Uri.parse("android.resource://com.example.myapplication/raw/correct"))
                     .setVibrate(new long[]{0,500,500,500,500})
-                    .setAutoCancel(true).build();
+                    .setPriority(1)
+                    .build();
 
 
             notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);

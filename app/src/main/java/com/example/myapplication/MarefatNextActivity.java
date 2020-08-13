@@ -9,19 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.lang.reflect.Array;
-import java.nio.FloatBuffer;
-import java.util.ArrayList;
-
 import static com.example.myapplication.MarefatActivity.etitle;
 
 public class MarefatNextActivity extends AppCompatActivity {
     private static int pos;
     private static int id1;
-    private FloatBuffer esrc;
 
 
     @Override
@@ -36,7 +28,7 @@ public class MarefatNextActivity extends AppCompatActivity {
 
         TextView t1=findViewById(R.id.t1);
         TextView t3=findViewById(R.id.t3);
-        TextView t4=findViewById(R.id.t4);
+        TextView t4=findViewById(R.id.t2);
 
         getSupportActionBar().setTitle("Marefat 313"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
@@ -52,7 +44,7 @@ public class MarefatNextActivity extends AppCompatActivity {
         Button b2=findViewById(R.id.b2);
         TextView t1=findViewById(R.id.t1);
         TextView t3=findViewById(R.id.t3);
-        TextView t4=findViewById(R.id.t4);
+        TextView t4=findViewById(R.id.t2);
         String t=b2.getText().toString();
         String x=MarefatActivity.utitle.get(pos);
         if(x.equals("") || x.equals("Sorry Not Available")){

@@ -35,13 +35,26 @@ public class MarefatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meet);
-        getSupportActionBar().setTitle("Recogn.(Marefat) of Imam"); // for set actionbar title
+        getSupportActionBar().setTitle("Marefat of Imam"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
         getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.green));
+
+
 
         final RecyclerView recyclerView=findViewById(R.id.recycle);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        etitle=new ArrayList<>();
+        utitle=new ArrayList<>();
+
+        esrc=new ArrayList<>();
+        usrc=new ArrayList<>();
+
+        edetails=new ArrayList<>();
+        udetails=new ArrayList<>();
+        id=new ArrayList<>();
+
 
 
         etitle.add("Importance of Recognition of Imam");
@@ -1099,8 +1112,28 @@ public class MarefatActivity extends AppCompatActivity {
             }
             etitle.set(i,res.trim());
 
-        }
+            s=utitle.get(i);
+            res="";
+            for(int j=0;j<s.length();j++)
+            {
+                if((s.charAt(j)>='A' && s.charAt(j)<='Z' )|| (s.charAt(j)>='a' && s.charAt(j)<='z')){
+                    if(j==0 || s.charAt(j-1)==' ')res+=Character.toUpperCase(s.charAt(j));
+                    else res+=Character.toLowerCase(s.charAt(j));}
+                else res+=s.charAt(j);
+            }
+            utitle.set(i,res.trim());
 
+        }
+        Intent intent=getIntent();
+        String d=intent.getStringExtra(MarefatActivity.MSG);
+        if(d!=null)
+        {
+            Intent intent1=new Intent(this,MarefatNextActivity.class);
+            intent1.putExtra(MarefatActivity.MSG,d);
+            startActivity(intent1);
+            finish();
+
+        }
 
 
 
@@ -1116,6 +1149,11 @@ public class MarefatActivity extends AppCompatActivity {
                 JSONObject obj=new JSONObject();
                 obj.put("english",etitle.get(i));
                 obj.put("urdu",utitle.get(i));
+                obj.put("edetails",edetails.get(i));
+                obj.put("udetails",udetails.get(i));
+                obj.put("eref",esrc.get(i));
+                obj.put("uref",usrc.get(i));
+
                 arr.put(obj);
             }
 
@@ -1142,6 +1180,7 @@ public class MarefatActivity extends AppCompatActivity {
 
 
             }catch(Exception e){}
+
         }
 
         final RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(MarefatActivity.this, arr);

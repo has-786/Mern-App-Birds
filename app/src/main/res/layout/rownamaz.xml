@@ -20,13 +20,13 @@
             android:layout_height="1sp"
             android:text="TextView" />
 
+
         <TextView
             android:id="@+id/t1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/lightgray"
             android:fontFamily="sans-serif-condensed-light"
-            android:padding="3dp"
             android:textAlignment="textEnd"
             android:text="TextView"
             android:textColor="@color/green"
@@ -44,12 +44,12 @@
             android:layout_height="wrap_content"
             android:background="@color/lightgray"
             android:fontFamily="sans-serif-condensed-light"
-            android:padding="3dp"
             android:paddingRight="10dp"
             android:text="TextView"
             android:textColor="@color/green"
-            android:textSize="15sp"
+            android:textSize="19sp"
             android:textStyle="bold"
+            android:paddingBottom="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

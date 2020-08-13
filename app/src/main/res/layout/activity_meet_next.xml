@@ -82,15 +82,16 @@
 
 
             <TextView
-                android:id="@+id/t4"
+                android:id="@+id/t2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:background="#ebd6c1"
+                android:background="@color/lightgray"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="10sp"
                 android:text="TextView"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
+                android:lineSpacingMultiplier="1.2"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="parent" />
 

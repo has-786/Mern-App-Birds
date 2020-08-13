@@ -2,7 +2,6 @@ package com.example.myapplication.adapterBio;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,19 +16,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.BioActivity;
 import com.example.myapplication.BioNextActivity;
-import com.example.myapplication.BlogActivity;
 import com.example.myapplication.CountryAdapter;
 import com.example.myapplication.CountryItem;
-import com.example.myapplication.DNZActivity;
-import com.example.myapplication.DuaAhadActivity;
-import com.example.myapplication.MeetActivity;
-import com.example.myapplication.QuizActivity;
 import com.example.myapplication.R;
-import com.example.myapplication.VideoActivity;
-import com.example.myapplication.nextActivity;
-import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -54,9 +44,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
     private static int images[]=new int[6];
-
-
-    private  static ArrayList<Class> activities=new ArrayList<>();
 
 
     public RecyclerViewAdapter(Context context,JSONArray arr) {
@@ -112,7 +99,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             spinner = itemView.findViewById(R.id.spinner_countries);
             id=itemView.findViewById(R.id.id);
 
-
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int pos, long id1) {
@@ -128,7 +114,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                         i.putExtra(MSG1, name);
                         i.putExtra(MSG2, subname);
                         i.putExtra(MSG3,biolang);
-                        Toast.makeText(context, name+ " " + subname, Toast.LENGTH_SHORT).show();
+                        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                        //  Toast.makeText(context, name+ " " + subname, Toast.LENGTH_SHORT).show();
                         context.startActivity(i);
                     }
                     spinner.setSelection(0);
@@ -170,14 +158,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             if (constraint == null || constraint.length() == 0) {
                 filteredList=constArr;
             } else {
-                try{  String filterPattern = constraint.toString().toLowerCase().trim();
-                    for (int i=0;i<constArr.length();i++) {
-                           ArrayList<CountryItem> item=(ArrayList<CountryItem>)constArr.getJSONObject(i).get("bio");
-                        if (item.get(0).getCountryName().toLowerCase().contains(filterPattern)
-                                || item.get(0).getFlagImage().toLowerCase().contains(filterPattern)) {
+                try{
+                     String filterPattern = constraint.toString().toLowerCase().trim();
+                     String[] p=filterPattern.split(" ");
+                     for(int j=0;j<p.length;j++)
+                     {
+                         for (int i=0;i<constArr.length();i++) {
+                             ArrayList<CountryItem> item=(ArrayList<CountryItem>)constArr.getJSONObject(i).get("bio");
+                             if (item.get(0).getCountryName().toLowerCase().contains(p[j])
+                                     || item.get(0).getFlagImage().toLowerCase().contains(p[j])) {
 
-                            filteredList.put(constArr.get(i));}
-                    }
+                                 filteredList.put(constArr.get(i));}
+                         }
+                     }
+
                 }catch (Exception e){}
             }
 

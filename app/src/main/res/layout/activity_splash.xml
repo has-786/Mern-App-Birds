@@ -11,25 +11,11 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="416dp"
-        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="109dp"
-        android:layout_marginEnd="-3dp"
+        android:layout_marginEnd="0dp"
         android:cropToPadding="true"
         app:srcCompat="@drawable/thelasthope2"
         tools:layout_editor_absoluteY="152dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-30dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/green" />
 
 </RelativeLayout>

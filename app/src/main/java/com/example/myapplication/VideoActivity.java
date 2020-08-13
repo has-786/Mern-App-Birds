@@ -80,8 +80,9 @@ public class VideoActivity extends AppCompatActivity {
                      }catch (Exception e){}
                     try{ result=arr.getJSONObject(0).getString("topic");
 
-                        Toast.makeText(VideoActivity.this,result+arr.length(), Toast.LENGTH_LONG).show();}catch (Exception e){}
-
+                        //Toast.makeText(VideoActivity.this,result+arr.length(), Toast.LENGTH_LONG).show();
+                         }
+                         catch (Exception e){}
                 }
             }, new Response.ErrorListener() {
                 @Override

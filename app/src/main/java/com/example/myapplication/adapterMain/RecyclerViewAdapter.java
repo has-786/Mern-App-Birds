@@ -17,6 +17,7 @@ import com.example.myapplication.BlogActivity;
 import com.example.myapplication.DNZActivity;
 import com.example.myapplication.MarefatActivity;
 import com.example.myapplication.MeetActivity;
+import com.example.myapplication.NoticeActivity;
 import com.example.myapplication.QuizActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.VideoActivity;
@@ -33,7 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private Context context;
     private JSONArray arr;
 
-    private static int images[]=new int[7];
+    private static int images[]=new int[8];
 
 
     private  static ArrayList<Class> activities=new ArrayList<>();
@@ -49,14 +50,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         activities.add(QuizActivity.class);
         activities.add(VideoActivity.class);
         activities.add(BioActivity.class);
+        activities.add(NoticeActivity.class);
 
-        images[0]=R.drawable.imam4;
-        images[1]=R.drawable.imam2;
-        images[2]=R.drawable.imam5;
-        images[3]=R.drawable.imam1;
-        images[4]=R.drawable.imam3;
-        images[5]=R.drawable.imam5;
-        images[6]=R.drawable.imam5;
+        images[0]=R.drawable.dua;
+        images[1]=R.drawable.meet;
+        images[2]=R.drawable.marefat;
+        images[3]=R.drawable.news;
+        images[4]=R.drawable.quiz;
+        images[5]=R.drawable.video;
+        images[6]=R.drawable.bio;
+        images[7]=R.drawable.notice;
 
     }
 
@@ -75,9 +78,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             JSONObject obj = arr.getJSONObject(position);
             holder.english.setText(obj.getString("english"));
             holder.urdu.setText(obj.getString("urdu"));
+            if(holder.urdu.getText().toString().equals("امام کی معرفت"))holder.english.setTextSize(19);
             holder.img.setImageResource(images[position]);
-            int height=holder.itemView.getLayoutParams().height;
-             Picasso.get().load(images[position]).resize(95,95).into(holder.img);
+            Picasso.get().load(images[position]).resize(95,95).into(holder.img);
         }
         catch(Exception e){}
     }
@@ -108,6 +111,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, activities.get(this.getAdapterPosition()));
             i.putExtra(MSG,Integer.toString(this.getAdapterPosition()));
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
     }

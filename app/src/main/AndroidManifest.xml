@@ -6,7 +6,6 @@
     <uses-permission android:name="SEND" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/thelasthope2"
@@ -15,18 +14,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".VideonextActivity"
+        <activity android:name=".NoticeAhadActivity" android:parentActivityName=".NoticeActivity"/>
+        <activity
+            android:name=".ContactActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".NoticeActivity" android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".VideonextActivity"
             android:parentActivityName=".VideoActivity">
-
             <intent-filter>
                 <action android:name="OPEN_ACTIVITY_VIDEO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".BlognextActivity"
+        <activity
+            android:name=".BlognextActivity"
             android:parentActivityName=".BlogActivity">
             <intent-filter>
                 <action android:name="OPEN_ACTIVITY_NEWS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -38,10 +48,12 @@
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="OPEN_ACTIVITY_NOTIFY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
@@ -62,16 +74,7 @@
                     android:pathPattern=".*"
                     android:scheme="https" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            <data
-                    android:host="open.thelasthope.app"
-                    android:scheme="app" />
-            </intent-filter>
         </activity>
-        <activity android:name=".AddActivity" />
         <activity
             android:name=".MarefatNextActivity"
             android:parentActivityName=".MarefatActivity" />
@@ -117,14 +120,10 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".VideoActivity"
-            android:parentActivityName=".MainActivity" >
-
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BlogActivity"
-            android:parentActivityName=".MainActivity" >
-
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DuaAhadActivity"
             android:parentActivityName=".DuaActivity" />
@@ -138,6 +137,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -147,10 +147,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_path" />
         </provider>
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/jamkaran_b" />
+            android:resource="@drawable/thelasthope2" />
     </application>
-
 
 </manifest>

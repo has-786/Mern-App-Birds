@@ -57,7 +57,6 @@ import static com.example.myapplication.BlogActivity.MSG;
 public class BlognextActivity extends AppCompatActivity {
     JSONObject arr1 = new JSONObject();
     RecyclerViewAdapter recyclerViewAdapter;
-    public static String MSG1 = "com.example.myapplication.BLOGNEXT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,12 +67,12 @@ public class BlognextActivity extends AppCompatActivity {
         //  getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
          String id1 = getIntent().getStringExtra(MSG);
         if(id1==null)id1="1";
-        Bundle b = getIntent().getExtras();// add these lines of code to get data from notification
-        String someData = b.getString("id");
+       // Bundle b = getIntent().getExtras();// add these lines of code to get data from notification
+        //String someData = b.getString("id");
 
-        if(someData!=null)
-        id1=someData;
-        Toast.makeText(this,id1,Toast.LENGTH_LONG).show();
+  //      if(someData!=null)
+//        id1=someData;
+       // Toast.makeText(this,id1,Toast.LENGTH_LONG).show();
 
         final ProgressBar pb = findViewById(R.id.pb);
         findViewById(R.id.nestedScrollView).setAlpha(0);
@@ -120,7 +119,7 @@ public class BlognextActivity extends AppCompatActivity {
                     String result;
                     try {
                         arr1 = response.getJSONArray("msg").getJSONObject(0);
-                        Toast.makeText(BlognextActivity.this, arr1.getString("tag"), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(BlognextActivity.this, arr1.getString("tag"), Toast.LENGTH_LONG).show();
                         JSONObject obj = new JSONObject();
                         obj.put("id", Integer.parseInt(id));
                         String[] r = arr1.getString("tag").split(" |,");
@@ -166,12 +165,13 @@ public class BlognextActivity extends AppCompatActivity {
 
                         pb.setTransitionAlpha(0);
                         findViewById(R.id.nestedScrollView).setAlpha(1);
-                        Picasso.get().load("http://thelasthope.site/uploads//" + arr1.getString("img")).resize(400, 325).into(img);
+                        int w=findViewById(R.id.img).getWidth();
+
+                        Picasso.get().load("http://thelasthope.site/uploads//" + arr1.getString("img")).resize(w,w).into(img);
                         t1.setText(arr1.getString("topic"));
                         t2.setText(arr1.getString("data").substring(0, Math.min(arr1.getString("data").length(), 300)));
                         t3.setText("Published On: " + arr1.getString("timestamp"));
                         Log.d("myapp", arr1.getString("topic"));
-                        //  Toast.makeText(BlognextActivity.this, arr.getString("topic"), Toast.LENGTH_LONG).show();
 
                         // For Related Articles Now
 

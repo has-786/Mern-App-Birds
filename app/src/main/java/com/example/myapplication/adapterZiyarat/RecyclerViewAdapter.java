@@ -77,6 +77,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, ZiyaratAhadActivity.class);
             try{ i.putExtra(MSG,arr.getJSONObject(this.getAdapterPosition()).getString("id"));}catch (Exception e){}
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
     }

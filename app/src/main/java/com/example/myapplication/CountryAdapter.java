@@ -66,13 +66,13 @@ else
 
     ViewGroup.LayoutParams layoutParams = textViewName.getLayoutParams();
     layoutParams.width =900;
-    layoutParams.height =100;
+    layoutParams.height =120;
     textViewName.setTextSize(20);
 
     textViewName.setLayoutParams(layoutParams);
     layoutParams = imageViewFlag.getLayoutParams();
     layoutParams.width = 900;
-    layoutParams.height =100;
+    layoutParams.height =120;
     imageViewFlag.setTextSize(18);
 
     imageViewFlag.setLayoutParams(layoutParams);

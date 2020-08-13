@@ -56,7 +56,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
               holder.tag.setText(obj.getString("tag"));
               holder.id.setText(obj.getString("id"));
 
-              Picasso.get().load("http://thelasthope.site/uploads//"+obj.getString("img")).resize(100,100).error(R.drawable.jamkaran_c).into(holder.img);
+              Picasso.get().load("http://thelasthope.site/uploads//"+obj.getString("img")).resize(100,100).error(R.drawable.candle).into(holder.img);
 
               //holder.img.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
               Picasso.get().setLoggingEnabled(true);
@@ -99,6 +99,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, BlognextActivity.class);
             i.putExtra(MSG,id.getText().toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
 
         }
@@ -118,12 +119,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 filteredList=constArr;
             } else {
                 try{  String filterPattern = constraint.toString().toLowerCase().trim();
-                    for (int i=0;i<constArr.length();i++) {
+                    String[] p=filterPattern.split(" ");
+                    for(int j=0;j<p.length;j++)
+                    {
+                        for (int i=0;i<constArr.length();i++) {
 
-                        if (constArr.getJSONObject(i).getString("topic").toLowerCase().contains(filterPattern)
-                                || constArr.getJSONObject(i).getString("tag").toLowerCase().contains(filterPattern)) {
-                            filteredList.put(constArr.getJSONObject(i));}
+                            if (constArr.getJSONObject(i).getString("topic").toLowerCase().contains(p[j])
+                                    || constArr.getJSONObject(i).getString("tag").toLowerCase().contains(p[j])) {
+                                filteredList.put(constArr.getJSONObject(i));}
+                        }
                     }
+
                 }catch (Exception e){}
             }
 

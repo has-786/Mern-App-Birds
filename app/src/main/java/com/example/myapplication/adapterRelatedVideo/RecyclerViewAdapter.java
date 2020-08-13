@@ -87,6 +87,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i = new Intent(context, VideonextActivity.class);
             i.putExtra(MSGv, id.getText().toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
     }

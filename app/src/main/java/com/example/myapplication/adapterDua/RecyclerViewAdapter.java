@@ -79,6 +79,7 @@ public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapt
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, DuaAhadActivity.class);
            try{ i.putExtra(MSG,arr.getJSONObject(this.getAdapterPosition()).getString("id"));}catch (Exception e){}
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
     }
@@ -98,12 +99,17 @@ public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapt
                 filteredList=constArr;
             } else {
                 try{  String filterPattern = constraint.toString().toLowerCase().trim();
-                for (int i=0;i<constArr.length();i++) {
+                    String[] p=filterPattern.split(" ");
+                    for (int j=0;j<p.length;j++)
+                    {
+                        for (int i=0;i<constArr.length();i++) {
 
-                    if (constArr.getJSONObject(i).getString("english").toLowerCase().contains(filterPattern)
-                    || constArr.getJSONObject(i).getString("urdu").toLowerCase().contains(filterPattern)) {
-                       filteredList.put(constArr.getJSONObject(i));}
+                            if (constArr.getJSONObject(i).getString("english").toLowerCase().contains(p[j])
+                                    || constArr.getJSONObject(i).getString("urdu").toLowerCase().contains(p[j])) {
+                                filteredList.put(constArr.getJSONObject(i));}
+                        }
                     }
+
                 }catch (Exception e){}
             }
 

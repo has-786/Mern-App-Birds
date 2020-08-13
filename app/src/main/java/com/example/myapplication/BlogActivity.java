@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -37,7 +38,8 @@ public class BlogActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
         getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.green));
 
-    final RecyclerView recyclerView=findViewById(R.id.recycle);
+
+        final RecyclerView recyclerView=findViewById(R.id.recycle);
     final ProgressBar pb=findViewById(R.id.pb);
     final SearchView searchView = findViewById(R.id.search);
 
@@ -66,10 +68,6 @@ public class BlogActivity extends AppCompatActivity {
                     pb.setTransitionAlpha(0);
                     searchView.setAlpha(1);
 
-                    try{ result=arr.getJSONObject(0).getString("topic");
-
-                   //     Toast.makeText(BlogActivity.this,result+arr.length(), Toast.LENGTH_LONG).show();
-                             }catch (Exception e){}
 
                 }
             }, new Response.ErrorListener() {

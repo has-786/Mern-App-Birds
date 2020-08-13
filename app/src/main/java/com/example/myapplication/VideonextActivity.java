@@ -65,18 +65,19 @@ public class VideonextActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Watch Video"); // for set actionbar title
         getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.green));
         //  getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
-        String id1 = getIntent().getStringExtra(MSG);
+        String id1 = getIntent().getStringExtra(MSGv);
         if(id1==null)id1="1";
-        Bundle b = getIntent().getExtras();// add these lines of code to get data from notification
-        String someData = b.getString("id");
+       // Bundle b = getIntent().getExtras();// add these lines of code to get data from notification
+       // String someData = b.getString("id");
 
-        if(someData!=null)
-            id1=someData;
-        Toast.makeText(this,id1,Toast.LENGTH_LONG).show();
+
+   //     Toast.makeText(this,id1,Toast.LENGTH_LONG).show();
 
         final ProgressBar pb = findViewById(R.id.pb);
+
         findViewById(R.id.nestedScrollView).setAlpha(0);
         pb.setTransitionAlpha(1);
+
         final RecyclerView recyclerView = findViewById(R.id.recycle);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -103,7 +104,7 @@ public class VideonextActivity extends AppCompatActivity {
                     String result;
                     try {
                         arr1 = response.getJSONArray("msg").getJSONObject(0);
-                        Toast.makeText(VideonextActivity.this, arr1.getString("tag"), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(VideonextActivity.this, arr1.getString("tag"), Toast.LENGTH_LONG).show();
                         JSONObject obj = new JSONObject();
                         obj.put("id", Integer.parseInt(id));
                         obj.put("tag",arr1.getString("tag"));
@@ -116,7 +117,8 @@ public class VideonextActivity extends AppCompatActivity {
                                 JSONArray arr;
                                 try {
                                     arr = response.getJSONArray("msg");
-                                    // Log.d("myapp1",response.getString("body"));
+
+                                                                       // Log.d("myapp1",response.getString("body"));
                                     Log.d("myapp1",arr.length()+"");
 
                                     recyclerViewAdapter=new RecyclerViewAdapter(VideonextActivity.this,arr);

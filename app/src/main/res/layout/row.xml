@@ -6,9 +6,9 @@
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="2dp"
     android:layout_marginBottom="0dp"
-    app:cardBackgroundColor="@color/red"
+    app:cardBackgroundColor="@color/lightgray"
     >
 
     <LinearLayout
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/red"
+        android:background="@color/lightgray"
         >
 
 
@@ -27,74 +27,80 @@
             android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/jamkaran_a" />
+            app:srcCompat="@drawable/candle" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:alpha="0"
+
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="32dp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/lightgray"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="2sp"
+                android:text="TextView"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                app:layout_constraintVertical_bias="0.0">
 
                 <TextView
-                    android:id="@+id/t1"
-                    android:background="@color/red"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:padding="2sp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:layout_width="match_parent"
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/green"
+                    android:padding="2sp"
+                    android:text="Tags: "
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t1" />
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/t2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="bottom"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lightgray"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="2sp"
+                    android:text="TextView"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/t1" />
 
-                    <TextView
-                        android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tags: "
-                        android:background="@color/green"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:padding="2sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/t2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:background="@color/red"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:padding="2sp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.487"
-                        app:layout_constraintStart_toEndOf="@+id/button"
-                        tools:layout_editor_absoluteY="46dp" />
-
-                    <TextView
-                        android:id="@+id/id"
-                        android:layout_width="1dp"
-                        android:layout_height="1dp"
-                        android:alpha="0"
-
-                        android:text="TextView" />
-
-                </LinearLayout>
             </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

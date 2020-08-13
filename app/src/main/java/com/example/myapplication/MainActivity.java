@@ -21,6 +21,7 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -108,7 +109,7 @@ static  ImageView iconImg;
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 Log.d("myapp", "Something went wrong Haha");
-                                Toast.makeText(MainActivity.this, "error", Toast.LENGTH_LONG).show();
+                            //    Toast.makeText(MainActivity.this, "error", Toast.LENGTH_LONG).show();
                             }
                         }) {
 
@@ -152,8 +153,8 @@ static  ImageView iconImg;
             arr.put(obj);
 
             obj=new JSONObject();
-            obj.put("english","Recognition(Marefat) of Imam");
-            obj.put("urdu","امام کے معرفت");
+            obj.put("english","Marefat of Imam");
+            obj.put("urdu","امام کی معرفت");
             obj.put("img","C:\\Users\\SYED MD HASNAIN JAH\\AndroidStudioProjects\\MyApplication\\app\\src\\main\\res\\drawable\\imam1.jpg");
             arr.put(obj);
 
@@ -179,6 +180,12 @@ static  ImageView iconImg;
             obj.put("img","C:\\Users\\SYED MD HASNAIN JAH\\AndroidStudioProjects\\MyApplication\\app\\src\\main\\res\\drawable\\imam1.jpg");
             arr.put(obj);
 
+            obj=new JSONObject();
+            obj.put("english","Important Notices");
+            obj.put("urdu","اہم نوٹس");
+            obj.put("img","C:\\Users\\SYED MD HASNAIN JAH\\AndroidStudioProjects\\MyApplication\\app\\src\\main\\res\\drawable\\imam1.jpg");
+            arr.put(obj);
+
 
         }catch (Exception e){}
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(MainActivity.this, arr);
@@ -197,15 +204,22 @@ static  ImageView iconImg;
         int id = item.getItemId();
         switch (id){
             case R.id.item1:
-                Toast.makeText(getApplicationContext(),"Item 1 Selected",Toast.LENGTH_LONG).show();
-                Intent i=new Intent("com.example.EXAMPLE_INTENT");
-                sendBroadcast(i);
+                startActivity(new Intent(this,AboutActivity.class));
                 return true;
 
             case R.id.item2:
-                Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
+
+                startActivity(new Intent(this,ContactActivity.class));
                 return true;
 
+            case R.id.item3:
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://thelasthope.site"));
+                startActivity(intent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

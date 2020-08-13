@@ -99,6 +99,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             Log.d("ClickFromViewHolder", "Clicked");
             Intent i=new Intent(context, VideonextActivity.class);
             i.putExtra(MSGv,id.getText().toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
 
 
@@ -123,7 +124,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     for (int i=0;i<constArr.length();i++) {
 
                         if (constArr.getJSONObject(i).getString("name").toLowerCase().contains(filterPattern)
-                                ||  constArr.getJSONObject(i).getString("tag").toLowerCase().contains(filterPattern)) {
+                                || constArr.getJSONObject(i).getString("tag").toLowerCase().contains(filterPattern)
+                               ) {
                             filteredList.put(constArr.getJSONObject(i)); }
                     }
                 }catch (Exception e){}

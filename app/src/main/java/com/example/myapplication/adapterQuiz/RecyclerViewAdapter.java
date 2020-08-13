@@ -82,13 +82,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             switch (view.getId())
             {
                 case R.id.b:
-                    Toast.makeText(context,"Button",Toast.LENGTH_LONG).show();
                     if(b.getText().toString().equals("Show Answer")){ans.setAlpha(1);b.setText("Hide Answer");   }
                     else {ans.setAlpha(0);b.setText("Show Answer");}
                     break;
-                case R.id.card:
-                    Toast.makeText(context,"Card",Toast.LENGTH_LONG).show();
-                    break;
+
             }
             Log.d("ClickFromViewHolder", "Clicked");
 
